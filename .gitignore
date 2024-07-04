@@ -1,0 +1,8 @@
+data/
+scripts/lammps_files
+*.lammpstrj
+*.lmpdata
+*.lmpin
+*.log
+log*
+*.pyc
