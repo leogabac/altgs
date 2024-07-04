@@ -1,0 +1,1028 @@
+This is the initial atom setup of ././lammps_files/trj9.lmpdata
+400 atoms 
+2 atom types 
+200 ellipsoids
+200 bonds 
+200 bond types 
+0.0 300.0 xlo xhi 
+0.0 300.0 ylo yhi 
+-15.0 15.0 zlo zhi 
+
+Atoms
+
+1	 1	 10.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 1 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+2	 1	 40.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 2 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+3	 1	 80.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 3 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+4	 1	 100.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 4 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+5	 1	 140.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 5 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+6	 1	 170.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 6 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+7	 1	 190.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 7 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+8	 1	 220.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 8 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+9	 1	 260.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 9 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+10	 1	 280.0	 0.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 10 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+11	 1	 20.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 11 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+12	 1	 50.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 12 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+13	 1	 70.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 13 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+14	 1	 100.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 14 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+15	 1	 140.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 15 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+16	 1	 170.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 16 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+17	 1	 200.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 17 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+18	 1	 220.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 18 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+19	 1	 260.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 19 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+20	 1	 280.0	 30.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 20 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+21	 1	 20.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 21 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+22	 1	 40.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 22 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+23	 1	 80.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 23 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+24	 1	 110.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 24 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+25	 1	 130.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 25 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+26	 1	 170.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 26 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+27	 1	 190.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 27 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+28	 1	 220.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 28 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+29	 1	 250.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 29 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+30	 1	 290.0	 60.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 30 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+31	 1	 10.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 31 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+32	 1	 40.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 32 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+33	 1	 70.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 33 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+34	 1	 100.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 34 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+35	 1	 140.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 35 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+36	 1	 160.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 36 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+37	 1	 190.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 37 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+38	 1	 220.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 38 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+39	 1	 260.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 39 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+40	 1	 280.0	 90.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 40 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+41	 1	 10.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 41 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+42	 1	 40.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 42 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+43	 1	 80.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 43 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+44	 1	 110.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 44 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+45	 1	 140.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 45 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+46	 1	 170.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 46 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+47	 1	 200.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 47 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+48	 1	 230.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 48 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+49	 1	 250.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 49 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+50	 1	 290.0	 120.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 50 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+51	 1	 20.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 51 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+52	 1	 50.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 52 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+53	 1	 80.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 53 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+54	 1	 110.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 54 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+55	 1	 130.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 55 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+56	 1	 170.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 56 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+57	 1	 190.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 57 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+58	 1	 230.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 58 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+59	 1	 250.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 59 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+60	 1	 280.0	 150.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 60 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+61	 1	 20.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 61 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+62	 1	 50.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 62 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+63	 1	 70.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 63 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+64	 1	 100.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 64 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+65	 1	 130.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 65 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+66	 1	 170.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 66 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+67	 1	 190.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 67 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+68	 1	 230.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 68 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+69	 1	 250.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 69 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+70	 1	 280.0	 180.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 70 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+71	 1	 20.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 71 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+72	 1	 50.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 72 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+73	 1	 80.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 73 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+74	 1	 110.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 74 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+75	 1	 130.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 75 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+76	 1	 170.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 76 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+77	 1	 200.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 77 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+78	 1	 220.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 78 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+79	 1	 260.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 79 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+80	 1	 280.0	 210.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 80 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+81	 1	 20.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 81 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+82	 1	 40.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 82 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+83	 1	 80.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 83 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+84	 1	 110.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 84 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+85	 1	 130.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 85 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+86	 1	 160.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 86 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+87	 1	 200.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 87 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+88	 1	 220.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 88 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+89	 1	 260.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 89 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+90	 1	 290.0	 240.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 90 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+91	 1	 10.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 91 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+92	 1	 50.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 92 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+93	 1	 70.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 93 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+94	 1	 110.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 94 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+95	 1	 130.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 95 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+96	 1	 160.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 96 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+97	 1	 200.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 97 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+98	 1	 220.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 98 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+99	 1	 260.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 99 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+100	 1	 280.0	 270.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 100 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+101	 1	 1.2246467991473533e-15	 20.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 101 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+102	 1	 30.0	 10.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 102 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+103	 1	 60.0	 20.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 103 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+104	 1	 90.0	 20.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 104 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+105	 1	 120.0	 20.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 105 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+106	 1	 150.0	 20.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 106 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+107	 1	 180.0	 20.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 107 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+108	 1	 210.0	 20.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 108 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+109	 1	 240.0	 20.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 109 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+110	 1	 270.0	 10.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 110 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+111	 1	 6.123233995736767e-16	 40.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 111 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+112	 1	 30.0	 50.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 112 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+113	 1	 60.0	 50.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 113 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+114	 1	 90.0	 40.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 114 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+115	 1	 120.0	 40.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 115 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+116	 1	 150.0	 50.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 116 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+117	 1	 180.0	 40.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 117 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+118	 1	 210.0	 50.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 118 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+119	 1	 240.0	 40.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 119 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+120	 1	 270.0	 50.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 120 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+121	 1	 6.123233995736767e-16	 70.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 121 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+122	 1	 30.0	 70.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 122 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+123	 1	 60.0	 80.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 123 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+124	 1	 90.0	 70.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 124 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+125	 1	 120.0	 80.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 125 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+126	 1	 150.0	 80.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 126 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+127	 1	 180.0	 80.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 127 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+128	 1	 210.0	 70.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 128 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+129	 1	 240.0	 80.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 129 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+130	 1	 270.0	 70.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 130 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+131	 1	 6.123233995736767e-16	 100.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 131 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+132	 1	 30.0	 110.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 132 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+133	 1	 60.0	 100.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 133 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+134	 1	 90.0	 110.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 134 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+135	 1	 120.0	 100.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 135 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+136	 1	 150.0	 100.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 136 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+137	 1	 180.0	 110.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 137 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+138	 1	 210.0	 100.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 138 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+139	 1	 240.0	 100.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 139 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+140	 1	 270.0	 100.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 140 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+141	 1	 1.2246467991473533e-15	 140.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 141 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+142	 1	 30.0	 130.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 142 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+143	 1	 60.0	 140.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 143 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+144	 1	 90.0	 130.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 144 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+145	 1	 120.0	 130.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 145 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+146	 1	 150.0	 140.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 146 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+147	 1	 180.0	 140.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 147 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+148	 1	 210.0	 130.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 148 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+149	 1	 240.0	 130.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 149 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+150	 1	 270.0	 130.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 150 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+151	 1	 1.2246467991473533e-15	 170.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 151 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+152	 1	 30.0	 170.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 152 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+153	 1	 60.0	 160.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 153 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+154	 1	 90.0	 170.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 154 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+155	 1	 120.0	 170.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 155 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+156	 1	 150.0	 170.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 156 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+157	 1	 180.0	 170.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 157 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+158	 1	 210.0	 170.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 158 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+159	 1	 240.0	 170.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 159 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+160	 1	 270.0	 160.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 160 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+161	 1	 6.123233995736767e-16	 190.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 161 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+162	 1	 30.0	 190.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 162 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+163	 1	 60.0	 200.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 163 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+164	 1	 90.0	 200.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 164 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+165	 1	 120.0	 200.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 165 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+166	 1	 150.0	 200.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 166 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+167	 1	 180.0	 190.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 167 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+168	 1	 210.0	 190.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 168 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+169	 1	 240.0	 190.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 169 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+170	 1	 270.0	 200.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 170 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+171	 1	 1.2246467991473533e-15	 230.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 171 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+172	 1	 30.0	 220.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 172 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+173	 1	 60.0	 230.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 173 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+174	 1	 90.0	 220.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 174 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+175	 1	 120.0	 230.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 175 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+176	 1	 150.0	 230.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 176 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+177	 1	 180.0	 230.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 177 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+178	 1	 210.0	 220.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 178 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+179	 1	 240.0	 230.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 179 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+180	 1	 270.0	 220.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 180 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+181	 1	 1.2246467991473533e-15	 260.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 181 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+182	 1	 30.0	 250.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 182 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+183	 1	 60.0	 260.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 183 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+184	 1	 90.0	 250.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 184 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+185	 1	 120.0	 260.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 185 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+186	 1	 150.0	 260.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 186 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+187	 1	 180.0	 250.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 187 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+188	 1	 210.0	 260.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 188 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+189	 1	 240.0	 250.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 189 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+190	 1	 270.0	 260.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 190 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+191	 1	 6.123233995736767e-16	 280.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 191 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+192	 1	 30.0	 280.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 192 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+193	 1	 60.0	 290.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 193 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+194	 1	 90.0	 280.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 194 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+195	 1	 120.0	 290.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 195 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+196	 1	 150.0	 290.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 196 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+197	 1	 180.0	 280.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 197 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+198	 1	 210.0	 290.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 198 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+199	 1	 240.0	 280.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 199 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+200	 1	 270.0	 290.0	 0.001	 1	 6.328426654958672e-05	 0.0	 0	 0	 0	 0.0576	 200 #atom_id|type|x0|y0|z0|e_flag|rho|m|mx|my|mz|chi|trap_id
+201	 2	 15.0	 0.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 1 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+202	 2	 45.0	 0.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 2 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+203	 2	 75.0	 0.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 3 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+204	 2	 105.0	 0.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 4 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+205	 2	 135.0	 0.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 5 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+206	 2	 165.0	 0.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 6 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+207	 2	 195.0	 0.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 7 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+208	 2	 225.0	 0.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 8 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+209	 2	 255.0	 0.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 9 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+210	 2	 285.0	 0.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 10 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+211	 2	 15.0	 30.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 11 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+212	 2	 45.0	 30.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 12 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+213	 2	 75.0	 30.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 13 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+214	 2	 105.0	 30.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 14 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+215	 2	 135.0	 30.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 15 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+216	 2	 165.0	 30.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 16 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+217	 2	 195.0	 30.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 17 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+218	 2	 225.0	 30.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 18 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+219	 2	 255.0	 30.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 19 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+220	 2	 285.0	 30.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 20 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+221	 2	 15.0	 60.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 21 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+222	 2	 45.0	 60.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 22 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+223	 2	 75.0	 60.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 23 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+224	 2	 105.0	 60.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 24 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+225	 2	 135.0	 60.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 25 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+226	 2	 165.0	 60.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 26 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+227	 2	 195.0	 60.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 27 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+228	 2	 225.0	 60.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 28 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+229	 2	 255.0	 60.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 29 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+230	 2	 285.0	 60.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 30 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+231	 2	 15.0	 90.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 31 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+232	 2	 45.0	 90.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 32 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+233	 2	 75.0	 90.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 33 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+234	 2	 105.0	 90.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 34 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+235	 2	 135.0	 90.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 35 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+236	 2	 165.0	 90.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 36 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+237	 2	 195.0	 90.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 37 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+238	 2	 225.0	 90.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 38 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+239	 2	 255.0	 90.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 39 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+240	 2	 285.0	 90.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 40 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+241	 2	 15.0	 120.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 41 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+242	 2	 45.0	 120.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 42 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+243	 2	 75.0	 120.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 43 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+244	 2	 105.0	 120.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 44 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+245	 2	 135.0	 120.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 45 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+246	 2	 165.0	 120.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 46 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+247	 2	 195.0	 120.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 47 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+248	 2	 225.0	 120.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 48 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+249	 2	 255.0	 120.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 49 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+250	 2	 285.0	 120.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 50 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+251	 2	 15.0	 150.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 51 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+252	 2	 45.0	 150.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 52 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+253	 2	 75.0	 150.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 53 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+254	 2	 105.0	 150.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 54 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+255	 2	 135.0	 150.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 55 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+256	 2	 165.0	 150.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 56 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+257	 2	 195.0	 150.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 57 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+258	 2	 225.0	 150.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 58 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+259	 2	 255.0	 150.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 59 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+260	 2	 285.0	 150.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 60 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+261	 2	 15.0	 180.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 61 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+262	 2	 45.0	 180.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 62 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+263	 2	 75.0	 180.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 63 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+264	 2	 105.0	 180.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 64 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+265	 2	 135.0	 180.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 65 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+266	 2	 165.0	 180.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 66 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+267	 2	 195.0	 180.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 67 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+268	 2	 225.0	 180.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 68 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+269	 2	 255.0	 180.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 69 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+270	 2	 285.0	 180.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 70 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+271	 2	 15.0	 210.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 71 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+272	 2	 45.0	 210.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 72 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+273	 2	 75.0	 210.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 73 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+274	 2	 105.0	 210.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 74 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+275	 2	 135.0	 210.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 75 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+276	 2	 165.0	 210.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 76 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+277	 2	 195.0	 210.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 77 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+278	 2	 225.0	 210.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 78 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+279	 2	 255.0	 210.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 79 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+280	 2	 285.0	 210.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 80 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+281	 2	 15.0	 240.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 81 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+282	 2	 45.0	 240.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 82 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+283	 2	 75.0	 240.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 83 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+284	 2	 105.0	 240.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 84 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+285	 2	 135.0	 240.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 85 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+286	 2	 165.0	 240.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 86 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+287	 2	 195.0	 240.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 87 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+288	 2	 225.0	 240.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 88 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+289	 2	 255.0	 240.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 89 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+290	 2	 285.0	 240.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 90 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+291	 2	 15.0	 270.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 91 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+292	 2	 45.0	 270.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 92 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+293	 2	 75.0	 270.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 93 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+294	 2	 105.0	 270.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 94 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+295	 2	 135.0	 270.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 95 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+296	 2	 165.0	 270.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 96 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+297	 2	 195.0	 270.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 97 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+298	 2	 225.0	 270.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 98 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+299	 2	 255.0	 270.0	 0.0	 0	 1	 0	 10.0	 0.0	 0.0	 0	 99 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+300	 2	 285.0	 270.0	 0.0	 0	 1	 0	 -10.0	 -0.0	 -0.0	 0	 100 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+301	 2	 9.18485099360515e-16	 15.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 101 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+302	 2	 30.0	 15.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 102 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+303	 2	 60.0	 15.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 103 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+304	 2	 90.0	 15.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 104 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+305	 2	 120.0	 15.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 105 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+306	 2	 150.0	 15.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 106 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+307	 2	 180.0	 15.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 107 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+308	 2	 210.0	 15.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 108 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+309	 2	 240.0	 15.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 109 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+310	 2	 270.0	 15.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 110 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+311	 2	 9.18485099360515e-16	 45.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 111 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+312	 2	 30.0	 45.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 112 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+313	 2	 60.0	 45.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 113 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+314	 2	 90.0	 45.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 114 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+315	 2	 120.0	 45.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 115 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+316	 2	 150.0	 45.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 116 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+317	 2	 180.0	 45.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 117 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+318	 2	 210.0	 45.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 118 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+319	 2	 240.0	 45.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 119 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+320	 2	 270.0	 45.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 120 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+321	 2	 9.18485099360515e-16	 75.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 121 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+322	 2	 30.0	 75.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 122 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+323	 2	 60.0	 75.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 123 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+324	 2	 90.0	 75.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 124 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+325	 2	 120.0	 75.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 125 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+326	 2	 150.0	 75.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 126 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+327	 2	 180.0	 75.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 127 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+328	 2	 210.0	 75.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 128 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+329	 2	 240.0	 75.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 129 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+330	 2	 270.0	 75.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 130 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+331	 2	 9.18485099360515e-16	 105.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 131 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+332	 2	 30.0	 105.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 132 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+333	 2	 60.0	 105.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 133 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+334	 2	 90.0	 105.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 134 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+335	 2	 120.0	 105.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 135 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+336	 2	 150.0	 105.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 136 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+337	 2	 180.0	 105.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 137 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+338	 2	 210.0	 105.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 138 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+339	 2	 240.0	 105.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 139 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+340	 2	 270.0	 105.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 140 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+341	 2	 9.18485099360515e-16	 135.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 141 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+342	 2	 30.0	 135.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 142 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+343	 2	 60.0	 135.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 143 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+344	 2	 90.0	 135.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 144 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+345	 2	 120.0	 135.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 145 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+346	 2	 150.0	 135.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 146 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+347	 2	 180.0	 135.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 147 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+348	 2	 210.0	 135.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 148 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+349	 2	 240.0	 135.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 149 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+350	 2	 270.0	 135.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 150 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+351	 2	 9.18485099360515e-16	 165.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 151 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+352	 2	 30.0	 165.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 152 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+353	 2	 60.0	 165.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 153 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+354	 2	 90.0	 165.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 154 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+355	 2	 120.0	 165.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 155 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+356	 2	 150.0	 165.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 156 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+357	 2	 180.0	 165.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 157 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+358	 2	 210.0	 165.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 158 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+359	 2	 240.0	 165.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 159 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+360	 2	 270.0	 165.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 160 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+361	 2	 9.18485099360515e-16	 195.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 161 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+362	 2	 30.0	 195.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 162 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+363	 2	 60.0	 195.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 163 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+364	 2	 90.0	 195.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 164 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+365	 2	 120.0	 195.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 165 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+366	 2	 150.0	 195.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 166 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+367	 2	 180.0	 195.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 167 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+368	 2	 210.0	 195.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 168 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+369	 2	 240.0	 195.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 169 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+370	 2	 270.0	 195.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 170 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+371	 2	 9.18485099360515e-16	 225.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 171 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+372	 2	 30.0	 225.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 172 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+373	 2	 60.0	 225.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 173 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+374	 2	 90.0	 225.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 174 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+375	 2	 120.0	 225.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 175 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+376	 2	 150.0	 225.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 176 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+377	 2	 180.0	 225.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 177 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+378	 2	 210.0	 225.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 178 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+379	 2	 240.0	 225.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 179 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+380	 2	 270.0	 225.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 180 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+381	 2	 9.18485099360515e-16	 255.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 181 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+382	 2	 30.0	 255.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 182 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+383	 2	 60.0	 255.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 183 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+384	 2	 90.0	 255.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 184 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+385	 2	 120.0	 255.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 185 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+386	 2	 150.0	 255.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 186 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+387	 2	 180.0	 255.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 187 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+388	 2	 210.0	 255.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 188 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+389	 2	 240.0	 255.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 189 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+390	 2	 270.0	 255.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 190 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+391	 2	 9.18485099360515e-16	 285.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 191 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+392	 2	 30.0	 285.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 192 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+393	 2	 60.0	 285.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 193 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+394	 2	 90.0	 285.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 194 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+395	 2	 120.0	 285.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 195 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+396	 2	 150.0	 285.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 196 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+397	 2	 180.0	 285.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 197 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+398	 2	 210.0	 285.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 198 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+399	 2	 240.0	 285.0	 0.0	 0	 1	 0	 -6.123233995736766e-16	 -10.0	 -0.0	 0	 199 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+400	 2	 270.0	 285.0	 0.0	 0	 1	 0	 6.123233995736766e-16	 10.0	 0.0	 0	 200 #trap id|type|x0|y0|z0|e_flag|null|0|dx|dy|dz|0|atom_id
+
+Bonds
+
+1 1 201 1
+2 2 202 2
+3 3 203 3
+4 4 204 4
+5 5 205 5
+6 6 206 6
+7 7 207 7
+8 8 208 8
+9 9 209 9
+10 10 210 10
+11 11 211 11
+12 12 212 12
+13 13 213 13
+14 14 214 14
+15 15 215 15
+16 16 216 16
+17 17 217 17
+18 18 218 18
+19 19 219 19
+20 20 220 20
+21 21 221 21
+22 22 222 22
+23 23 223 23
+24 24 224 24
+25 25 225 25
+26 26 226 26
+27 27 227 27
+28 28 228 28
+29 29 229 29
+30 30 230 30
+31 31 231 31
+32 32 232 32
+33 33 233 33
+34 34 234 34
+35 35 235 35
+36 36 236 36
+37 37 237 37
+38 38 238 38
+39 39 239 39
+40 40 240 40
+41 41 241 41
+42 42 242 42
+43 43 243 43
+44 44 244 44
+45 45 245 45
+46 46 246 46
+47 47 247 47
+48 48 248 48
+49 49 249 49
+50 50 250 50
+51 51 251 51
+52 52 252 52
+53 53 253 53
+54 54 254 54
+55 55 255 55
+56 56 256 56
+57 57 257 57
+58 58 258 58
+59 59 259 59
+60 60 260 60
+61 61 261 61
+62 62 262 62
+63 63 263 63
+64 64 264 64
+65 65 265 65
+66 66 266 66
+67 67 267 67
+68 68 268 68
+69 69 269 69
+70 70 270 70
+71 71 271 71
+72 72 272 72
+73 73 273 73
+74 74 274 74
+75 75 275 75
+76 76 276 76
+77 77 277 77
+78 78 278 78
+79 79 279 79
+80 80 280 80
+81 81 281 81
+82 82 282 82
+83 83 283 83
+84 84 284 84
+85 85 285 85
+86 86 286 86
+87 87 287 87
+88 88 288 88
+89 89 289 89
+90 90 290 90
+91 91 291 91
+92 92 292 92
+93 93 293 93
+94 94 294 94
+95 95 295 95
+96 96 296 96
+97 97 297 97
+98 98 298 98
+99 99 299 99
+100 100 300 100
+101 101 301 101
+102 102 302 102
+103 103 303 103
+104 104 304 104
+105 105 305 105
+106 106 306 106
+107 107 307 107
+108 108 308 108
+109 109 309 109
+110 110 310 110
+111 111 311 111
+112 112 312 112
+113 113 313 113
+114 114 314 114
+115 115 315 115
+116 116 316 116
+117 117 317 117
+118 118 318 118
+119 119 319 119
+120 120 320 120
+121 121 321 121
+122 122 322 122
+123 123 323 123
+124 124 324 124
+125 125 325 125
+126 126 326 126
+127 127 327 127
+128 128 328 128
+129 129 329 129
+130 130 330 130
+131 131 331 131
+132 132 332 132
+133 133 333 133
+134 134 334 134
+135 135 335 135
+136 136 336 136
+137 137 337 137
+138 138 338 138
+139 139 339 139
+140 140 340 140
+141 141 341 141
+142 142 342 142
+143 143 343 143
+144 144 344 144
+145 145 345 145
+146 146 346 146
+147 147 347 147
+148 148 348 148
+149 149 349 149
+150 150 350 150
+151 151 351 151
+152 152 352 152
+153 153 353 153
+154 154 354 154
+155 155 355 155
+156 156 356 156
+157 157 357 157
+158 158 358 158
+159 159 359 159
+160 160 360 160
+161 161 361 161
+162 162 362 162
+163 163 363 163
+164 164 364 164
+165 165 365 165
+166 166 366 166
+167 167 367 167
+168 168 368 168
+169 169 369 169
+170 170 370 170
+171 171 371 171
+172 172 372 172
+173 173 373 173
+174 174 374 174
+175 175 375 175
+176 176 376 176
+177 177 377 177
+178 178 378 178
+179 179 379 179
+180 180 380 180
+181 181 381 181
+182 182 382 182
+183 183 383 183
+184 184 384 184
+185 185 385 185
+186 186 386 186
+187 187 387 187
+188 188 388 188
+189 189 389 189
+190 190 390 190
+191 191 391 191
+192 192 392 192
+193 193 393 193
+194 194 394 194
+195 195 395 195
+196 196 396 196
+197 197 397 197
+198 198 398 198
+199 199 399 199
+200 200 400 200
+
+Bond Coeffs
+
+1  0.0009999999999999998 3.2000000000000006e-07
+2  0.0009999999999999998 3.2000000000000006e-07
+3  0.0009999999999999998 3.2000000000000006e-07
+4  0.0009999999999999998 3.2000000000000006e-07
+5  0.0009999999999999998 3.2000000000000006e-07
+6  0.0009999999999999998 3.2000000000000006e-07
+7  0.0009999999999999998 3.2000000000000006e-07
+8  0.0009999999999999998 3.2000000000000006e-07
+9  0.0009999999999999998 3.2000000000000006e-07
+10  0.0009999999999999998 3.2000000000000006e-07
+11  0.0009999999999999998 3.2000000000000006e-07
+12  0.0009999999999999998 3.2000000000000006e-07
+13  0.0009999999999999998 3.2000000000000006e-07
+14  0.0009999999999999998 3.2000000000000006e-07
+15  0.0009999999999999998 3.2000000000000006e-07
+16  0.0009999999999999998 3.2000000000000006e-07
+17  0.0009999999999999998 3.2000000000000006e-07
+18  0.0009999999999999998 3.2000000000000006e-07
+19  0.0009999999999999998 3.2000000000000006e-07
+20  0.0009999999999999998 3.2000000000000006e-07
+21  0.0009999999999999998 3.2000000000000006e-07
+22  0.0009999999999999998 3.2000000000000006e-07
+23  0.0009999999999999998 3.2000000000000006e-07
+24  0.0009999999999999998 3.2000000000000006e-07
+25  0.0009999999999999998 3.2000000000000006e-07
+26  0.0009999999999999998 3.2000000000000006e-07
+27  0.0009999999999999998 3.2000000000000006e-07
+28  0.0009999999999999998 3.2000000000000006e-07
+29  0.0009999999999999998 3.2000000000000006e-07
+30  0.0009999999999999998 3.2000000000000006e-07
+31  0.0009999999999999998 3.2000000000000006e-07
+32  0.0009999999999999998 3.2000000000000006e-07
+33  0.0009999999999999998 3.2000000000000006e-07
+34  0.0009999999999999998 3.2000000000000006e-07
+35  0.0009999999999999998 3.2000000000000006e-07
+36  0.0009999999999999998 3.2000000000000006e-07
+37  0.0009999999999999998 3.2000000000000006e-07
+38  0.0009999999999999998 3.2000000000000006e-07
+39  0.0009999999999999998 3.2000000000000006e-07
+40  0.0009999999999999998 3.2000000000000006e-07
+41  0.0009999999999999998 3.2000000000000006e-07
+42  0.0009999999999999998 3.2000000000000006e-07
+43  0.0009999999999999998 3.2000000000000006e-07
+44  0.0009999999999999998 3.2000000000000006e-07
+45  0.0009999999999999998 3.2000000000000006e-07
+46  0.0009999999999999998 3.2000000000000006e-07
+47  0.0009999999999999998 3.2000000000000006e-07
+48  0.0009999999999999998 3.2000000000000006e-07
+49  0.0009999999999999998 3.2000000000000006e-07
+50  0.0009999999999999998 3.2000000000000006e-07
+51  0.0009999999999999998 3.2000000000000006e-07
+52  0.0009999999999999998 3.2000000000000006e-07
+53  0.0009999999999999998 3.2000000000000006e-07
+54  0.0009999999999999998 3.2000000000000006e-07
+55  0.0009999999999999998 3.2000000000000006e-07
+56  0.0009999999999999998 3.2000000000000006e-07
+57  0.0009999999999999998 3.2000000000000006e-07
+58  0.0009999999999999998 3.2000000000000006e-07
+59  0.0009999999999999998 3.2000000000000006e-07
+60  0.0009999999999999998 3.2000000000000006e-07
+61  0.0009999999999999998 3.2000000000000006e-07
+62  0.0009999999999999998 3.2000000000000006e-07
+63  0.0009999999999999998 3.2000000000000006e-07
+64  0.0009999999999999998 3.2000000000000006e-07
+65  0.0009999999999999998 3.2000000000000006e-07
+66  0.0009999999999999998 3.2000000000000006e-07
+67  0.0009999999999999998 3.2000000000000006e-07
+68  0.0009999999999999998 3.2000000000000006e-07
+69  0.0009999999999999998 3.2000000000000006e-07
+70  0.0009999999999999998 3.2000000000000006e-07
+71  0.0009999999999999998 3.2000000000000006e-07
+72  0.0009999999999999998 3.2000000000000006e-07
+73  0.0009999999999999998 3.2000000000000006e-07
+74  0.0009999999999999998 3.2000000000000006e-07
+75  0.0009999999999999998 3.2000000000000006e-07
+76  0.0009999999999999998 3.2000000000000006e-07
+77  0.0009999999999999998 3.2000000000000006e-07
+78  0.0009999999999999998 3.2000000000000006e-07
+79  0.0009999999999999998 3.2000000000000006e-07
+80  0.0009999999999999998 3.2000000000000006e-07
+81  0.0009999999999999998 3.2000000000000006e-07
+82  0.0009999999999999998 3.2000000000000006e-07
+83  0.0009999999999999998 3.2000000000000006e-07
+84  0.0009999999999999998 3.2000000000000006e-07
+85  0.0009999999999999998 3.2000000000000006e-07
+86  0.0009999999999999998 3.2000000000000006e-07
+87  0.0009999999999999998 3.2000000000000006e-07
+88  0.0009999999999999998 3.2000000000000006e-07
+89  0.0009999999999999998 3.2000000000000006e-07
+90  0.0009999999999999998 3.2000000000000006e-07
+91  0.0009999999999999998 3.2000000000000006e-07
+92  0.0009999999999999998 3.2000000000000006e-07
+93  0.0009999999999999998 3.2000000000000006e-07
+94  0.0009999999999999998 3.2000000000000006e-07
+95  0.0009999999999999998 3.2000000000000006e-07
+96  0.0009999999999999998 3.2000000000000006e-07
+97  0.0009999999999999998 3.2000000000000006e-07
+98  0.0009999999999999998 3.2000000000000006e-07
+99  0.0009999999999999998 3.2000000000000006e-07
+100  0.0009999999999999998 3.2000000000000006e-07
+101  0.0009999999999999998 3.2000000000000006e-07
+102  0.0009999999999999998 3.2000000000000006e-07
+103  0.0009999999999999998 3.2000000000000006e-07
+104  0.0009999999999999998 3.2000000000000006e-07
+105  0.0009999999999999998 3.2000000000000006e-07
+106  0.0009999999999999998 3.2000000000000006e-07
+107  0.0009999999999999998 3.2000000000000006e-07
+108  0.0009999999999999998 3.2000000000000006e-07
+109  0.0009999999999999998 3.2000000000000006e-07
+110  0.0009999999999999998 3.2000000000000006e-07
+111  0.0009999999999999998 3.2000000000000006e-07
+112  0.0009999999999999998 3.2000000000000006e-07
+113  0.0009999999999999998 3.2000000000000006e-07
+114  0.0009999999999999998 3.2000000000000006e-07
+115  0.0009999999999999998 3.2000000000000006e-07
+116  0.0009999999999999998 3.2000000000000006e-07
+117  0.0009999999999999998 3.2000000000000006e-07
+118  0.0009999999999999998 3.2000000000000006e-07
+119  0.0009999999999999998 3.2000000000000006e-07
+120  0.0009999999999999998 3.2000000000000006e-07
+121  0.0009999999999999998 3.2000000000000006e-07
+122  0.0009999999999999998 3.2000000000000006e-07
+123  0.0009999999999999998 3.2000000000000006e-07
+124  0.0009999999999999998 3.2000000000000006e-07
+125  0.0009999999999999998 3.2000000000000006e-07
+126  0.0009999999999999998 3.2000000000000006e-07
+127  0.0009999999999999998 3.2000000000000006e-07
+128  0.0009999999999999998 3.2000000000000006e-07
+129  0.0009999999999999998 3.2000000000000006e-07
+130  0.0009999999999999998 3.2000000000000006e-07
+131  0.0009999999999999998 3.2000000000000006e-07
+132  0.0009999999999999998 3.2000000000000006e-07
+133  0.0009999999999999998 3.2000000000000006e-07
+134  0.0009999999999999998 3.2000000000000006e-07
+135  0.0009999999999999998 3.2000000000000006e-07
+136  0.0009999999999999998 3.2000000000000006e-07
+137  0.0009999999999999998 3.2000000000000006e-07
+138  0.0009999999999999998 3.2000000000000006e-07
+139  0.0009999999999999998 3.2000000000000006e-07
+140  0.0009999999999999998 3.2000000000000006e-07
+141  0.0009999999999999998 3.2000000000000006e-07
+142  0.0009999999999999998 3.2000000000000006e-07
+143  0.0009999999999999998 3.2000000000000006e-07
+144  0.0009999999999999998 3.2000000000000006e-07
+145  0.0009999999999999998 3.2000000000000006e-07
+146  0.0009999999999999998 3.2000000000000006e-07
+147  0.0009999999999999998 3.2000000000000006e-07
+148  0.0009999999999999998 3.2000000000000006e-07
+149  0.0009999999999999998 3.2000000000000006e-07
+150  0.0009999999999999998 3.2000000000000006e-07
+151  0.0009999999999999998 3.2000000000000006e-07
+152  0.0009999999999999998 3.2000000000000006e-07
+153  0.0009999999999999998 3.2000000000000006e-07
+154  0.0009999999999999998 3.2000000000000006e-07
+155  0.0009999999999999998 3.2000000000000006e-07
+156  0.0009999999999999998 3.2000000000000006e-07
+157  0.0009999999999999998 3.2000000000000006e-07
+158  0.0009999999999999998 3.2000000000000006e-07
+159  0.0009999999999999998 3.2000000000000006e-07
+160  0.0009999999999999998 3.2000000000000006e-07
+161  0.0009999999999999998 3.2000000000000006e-07
+162  0.0009999999999999998 3.2000000000000006e-07
+163  0.0009999999999999998 3.2000000000000006e-07
+164  0.0009999999999999998 3.2000000000000006e-07
+165  0.0009999999999999998 3.2000000000000006e-07
+166  0.0009999999999999998 3.2000000000000006e-07
+167  0.0009999999999999998 3.2000000000000006e-07
+168  0.0009999999999999998 3.2000000000000006e-07
+169  0.0009999999999999998 3.2000000000000006e-07
+170  0.0009999999999999998 3.2000000000000006e-07
+171  0.0009999999999999998 3.2000000000000006e-07
+172  0.0009999999999999998 3.2000000000000006e-07
+173  0.0009999999999999998 3.2000000000000006e-07
+174  0.0009999999999999998 3.2000000000000006e-07
+175  0.0009999999999999998 3.2000000000000006e-07
+176  0.0009999999999999998 3.2000000000000006e-07
+177  0.0009999999999999998 3.2000000000000006e-07
+178  0.0009999999999999998 3.2000000000000006e-07
+179  0.0009999999999999998 3.2000000000000006e-07
+180  0.0009999999999999998 3.2000000000000006e-07
+181  0.0009999999999999998 3.2000000000000006e-07
+182  0.0009999999999999998 3.2000000000000006e-07
+183  0.0009999999999999998 3.2000000000000006e-07
+184  0.0009999999999999998 3.2000000000000006e-07
+185  0.0009999999999999998 3.2000000000000006e-07
+186  0.0009999999999999998 3.2000000000000006e-07
+187  0.0009999999999999998 3.2000000000000006e-07
+188  0.0009999999999999998 3.2000000000000006e-07
+189  0.0009999999999999998 3.2000000000000006e-07
+190  0.0009999999999999998 3.2000000000000006e-07
+191  0.0009999999999999998 3.2000000000000006e-07
+192  0.0009999999999999998 3.2000000000000006e-07
+193  0.0009999999999999998 3.2000000000000006e-07
+194  0.0009999999999999998 3.2000000000000006e-07
+195  0.0009999999999999998 3.2000000000000006e-07
+196  0.0009999999999999998 3.2000000000000006e-07
+197  0.0009999999999999998 3.2000000000000006e-07
+198  0.0009999999999999998 3.2000000000000006e-07
+199  0.0009999999999999998 3.2000000000000006e-07
+200  0.0009999999999999998 3.2000000000000006e-07
+
+Ellipsoids
+
+1, 10, 10, 10, 0.07383732526494154, -0.8045836748133424, 0.10238074834421228, 0.5802683361946058, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+2, 10, 10, 10, 0.15639679911437648, 0.7173822768122833, 0.6570743550802832, -0.17075128707635565, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+3, 10, 10, 10, 0.564427622196714, -0.3619399609323695, 0.6779527233450159, 0.3013320907084321, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+4, 10, 10, 10, 0.8238281103108809, -0.17433588859630159, 0.4104687314815801, 0.3498995042649296, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+5, 10, 10, 10, 0.09558765273407206, 0.8990587555989413, 0.3493403457193146, -0.24600340948528213, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+6, 10, 10, 10, 0.8282570497578097, -0.15612181277672788, 0.2821825960605869, 0.4582458091268324, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+7, 10, 10, 10, 0.3852741691586254, 0.40905993715024913, 0.8035991060475013, -0.19611797255076327, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+8, 10, 10, 10, 0.11249135478593097, -0.5886688769975177, 0.0831727176600847, 0.7961764549331655, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+9, 10, 10, 10, 0.8587313210882597, -0.1300400566367111, 0.4171392482563196, 0.2677030993770633, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+10, 10, 10, 10, 0.8981923738236735, -0.05153995439417498, 0.4226046982787429, 0.1095415980291207, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+11, 10, 10, 10, 0.875634811919007, 0.06351008575019959, 0.4635025698306538, -0.11998130239311167, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+12, 10, 10, 10, 0.6818591186054948, -0.17960951527717903, 0.6862667387894374, 0.17845595430734343, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+13, 10, 10, 10, 0.440750727312715, 0.35720057205178946, 0.19689082207886197, -0.7996127511991645, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+14, 10, 10, 10, 0.705806703940828, -0.1921811716532208, 0.649017329075026, 0.20899713034991405, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+15, 10, 10, 10, 0.8565975654102895, 0.11188422908606234, 0.2091500656420985, -0.45823441627281575, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+16, 10, 10, 10, 0.5964811937809024, -0.4031857748559357, 0.4776672799097317, 0.5034733221563645, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+17, 10, 10, 10, 0.10850143185158068, -0.7471008831645746, 0.12595278707323213, 0.6435865171749285, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+18, 10, 10, 10, 0.3381606351764202, 0.45943621337600216, 0.19471398607558246, -0.7979048904990862, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+19, 10, 10, 10, 0.014654611322869266, -0.7466640005395386, 0.016458294418705173, 0.6648362484176799, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+20, 10, 10, 10, 0.15641621950444842, 0.7052315437873751, 0.16421842106816584, -0.6717252013324277, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+21, 10, 10, 10, 0.8055944570385138, 0.1918170009181974, 0.43069223478308644, -0.35878685573069846, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+22, 10, 10, 10, 0.38018761479795865, -0.3128295914086859, 0.8593249567387506, 0.13840391258652363, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+23, 10, 10, 10, 0.02930344044717557, -0.9520110300176673, 0.09654490218556418, 0.2889556868529129, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+24, 10, 10, 10, 0.335607705128462, 0.6636944373882167, 0.4536474269043121, -0.49100017729267953, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+25, 10, 10, 10, 0.26914225238739825, 0.6722485680924758, 0.2889176593405227, -0.6262354962780755, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+26, 10, 10, 10, 0.002879488306261924, 0.9793695199977899, 0.013990442164460071, -0.2015721195364967, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+27, 10, 10, 10, 0.0748787179685319, 0.7902011179743632, 0.09858018624016777, -0.6002143930532734, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+28, 10, 10, 10, 0.0948396915833313, -0.8539758159703497, 0.48338138277986564, 0.1675505219925594, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+29, 10, 10, 10, 0.23206822201849975, 0.7401188886728702, 0.31356083669150275, -0.5477663485941178, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+30, 10, 10, 10, 0.13746224088583642, 0.4768401888007553, 0.864860385257953, -0.0757897135933992, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+31, 10, 10, 10, 0.08337153803737549, -0.9158517088395913, 0.25732397527158046, 0.2967308642715045, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+32, 10, 10, 10, 0.402607957290456, 0.4954715248160064, 0.2779228213581532, -0.7177560213549112, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+33, 10, 10, 10, 0.7555348499722775, 0.16223758206547542, 0.6010450941296764, -0.2039383540817289, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+34, 10, 10, 10, 0.24563058731668222, -0.6282845569980992, 0.7049851242667593, 0.21890661153730845, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+35, 10, 10, 10, 0.8778866244332296, 0.11921239567186065, 0.2876774302451308, -0.36379276447857406, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+36, 10, 10, 10, 0.24455833019975542, -0.06506009450412994, 0.016448702877330072, 0.9673095923264042, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+37, 10, 10, 10, 0.30765931907715915, 0.6852969532784339, 0.4037360339479178, -0.5222174299123694, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+38, 10, 10, 10, 0.7593417097706675, 0.14104414204007032, 0.1754258918406407, -0.6105182014245403, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+39, 10, 10, 10, 0.2866010373544553, -0.7053655732432668, 0.5172974139691853, 0.39079743982188664, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+40, 10, 10, 10, 0.19913028276289685, -0.8007427190889895, 0.40736244256829857, 0.39142568732459315, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+41, 10, 10, 10, 0.861067640123638, -0.07558097506815803, 0.4845745041386008, 0.13430407766886493, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+42, 10, 10, 10, 0.14068684804687506, 0.7249826686615474, 0.1554624223223344, -0.6560783308208622, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+43, 10, 10, 10, 0.1612408437993871, -0.6505453767398387, 0.7280338642601766, 0.14407912959092212, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+44, 10, 10, 10, 0.484149034981653, 0.5128349250986194, 0.46099029660778285, -0.5385981785699762, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+45, 10, 10, 10, 0.6952162798107221, -0.26828978528431374, 0.31829991522841333, 0.5859864156819863, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+46, 10, 10, 10, 0.5680013498841292, 0.10690007409425212, 0.07471980813539487, -0.8126277074778216, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+47, 10, 10, 10, 0.0431301669334213, 0.7127879767440484, 0.04400182327841133, -0.6986679672473876, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+48, 10, 10, 10, 0.5854374769114139, 0.3130186763189052, 0.2615577611910958, -0.7006210148602879, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+49, 10, 10, 10, 0.6090432126416433, -0.33705635600715284, 0.3192125273019931, 0.6430884390375867, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+50, 10, 10, 10, 0.8218811705241383, -0.15627721545417608, 0.4770830462357963, 0.26922210247699646, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+51, 10, 10, 10, 0.24249217659852468, 0.7557778216364869, 0.4585070902000011, -0.39971074147093494, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+52, 10, 10, 10, 0.016459229894378306, -0.44994895486715825, 0.008294446602552998, 0.892864062397403, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+53, 10, 10, 10, 0.13791369304812923, 0.533928401878815, 0.8294692853300589, -0.0887748817571854, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+54, 10, 10, 10, 0.31423288064134697, 0.6723113372424876, 0.38509841693301705, -0.5485930840019251, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+55, 10, 10, 10, 0.08027464759085165, -0.7271183120227344, 0.08630427681418396, 0.6763183518720712, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+56, 10, 10, 10, 0.18971436422765214, 0.6282217225156946, 0.16170925047097554, -0.7370183482636146, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+57, 10, 10, 10, 0.0073955409983499365, 0.22291901901096428, 0.0016912127120160068, -0.9748074459789963, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+58, 10, 10, 10, 0.5441255952964621, 0.3635942347808997, 0.701573025719801, -0.28199620309452106, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+59, 10, 10, 10, 0.745040664163014, 0.2452428958891932, 0.36353965041870834, -0.5026024804284801, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+60, 10, 10, 10, 0.7296126705956892, 0.15672658834388664, 0.6413357066602448, -0.1782992954975334, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+61, 10, 10, 10, 0.5838746037889101, 0.3561014906366428, 0.6574772665347032, -0.31623696717297173, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+62, 10, 10, 10, 0.003428294298521756, 0.934246901142143, 0.008984287340198082, -0.3564972048775336, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+63, 10, 10, 10, 0.3530430163726663, -0.6467311699164309, 0.4885758068524276, 0.4673254790908722, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+64, 10, 10, 10, 0.8139024349531502, 0.046133725898639066, 0.575480090149732, -0.06524700417106347, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+65, 10, 10, 10, 0.2825019244192074, -0.29394491372800335, 0.9085345904340847, 0.0913999364203883, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+66, 10, 10, 10, 0.26741894485293727, 0.2627630560739892, 0.07605264892225369, -0.9239365123688466, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+67, 10, 10, 10, 0.2997340015676903, -0.16632719762166673, 0.9379069235442765, 0.05315443916789543, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+68, 10, 10, 10, 0.6851323133085042, -0.2511524137129282, 0.6260822533515215, 0.27484029978332697, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+69, 10, 10, 10, 0.003369901844741494, -0.5234134498912664, 0.0020700794978858396, 0.85206966792942, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+70, 10, 10, 10, 0.10456310635406407, -0.8881277973849666, 0.2503128104672134, 0.3709973978584235, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+71, 10, 10, 10, 0.7163968766859731, 0.10510405974357742, 0.11059867026100952, -0.6808058356363417, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+72, 10, 10, 10, 0.9489414166691011, -0.029683530647630497, 0.29965449999929106, 0.09400136365237234, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+73, 10, 10, 10, 0.0004928374930369417, -0.8208376746396411, 0.0007082760491674265, 0.5711608944495679, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+74, 10, 10, 10, 0.7211889019741045, 0.27142058465434704, 0.3858964272132018, -0.5072488357397817, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+75, 10, 10, 10, 0.2011585290362593, 0.7088982208905511, 0.6379971030136703, -0.22351343395944695, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+76, 10, 10, 10, 0.13480347211182286, -0.10685797024649936, 0.9849850378165178, 0.014624410380874529, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+77, 10, 10, 10, 0.23745909197104398, 0.7573169763143143, 0.37608577431794077, -0.47816698692204435, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+78, 10, 10, 10, 0.16776173456963442, -0.5266879968614393, 0.10691234823806114, 0.8264535704868697, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+79, 10, 10, 10, 0.2589652797662045, -0.4802404437530369, 0.8243455539823985, 0.15086585991850557, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+80, 10, 10, 10, 0.1415367642209519, -0.6724018189784627, 0.13325271852636253, 0.7142036482780324, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+81, 10, 10, 10, 0.931105295382672, 0.06134719947273962, 0.3080540155085019, -0.18542430681085686, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+82, 10, 10, 10, 0.13127552257710084, 0.3024431903940732, 0.04209679625487773, -0.9431451179439138, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+83, 10, 10, 10, 0.3210547203470806, -0.46344923257452414, 0.1848430833372686, 0.8049668998855257, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+84, 10, 10, 10, 0.21802221530228544, -0.7657212213826468, 0.5081275471622266, 0.32854789692501585, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+85, 10, 10, 10, 0.371099912540951, 0.6215404400777397, 0.4235161573856369, -0.5446158285373027, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+86, 10, 10, 10, 0.2698906479748719, -0.630105580687923, 0.6843835096784656, 0.24848582857343135, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+87, 10, 10, 10, 0.6298072406692432, -0.32609708172091373, 0.3295431009235968, 0.6232213712055755, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+88, 10, 10, 10, 0.03943830129124946, 0.9595666334660095, 0.21810837547153217, -0.17350859598054194, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+89, 10, 10, 10, 0.7831279333983494, -0.17987979480684027, 0.5335136681990184, 0.264039893190986, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+90, 10, 10, 10, 0.9411861381642344, 0.03764529466321882, 0.3165850322354328, -0.11191694456919452, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+91, 10, 10, 10, 0.3269347931136468, -0.18655833878759878, 0.06600224976500618, 0.9240959529759376, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+92, 10, 10, 10, 0.8795483964196527, 0.11206532061841297, 0.2559160377804103, -0.38515316937172595, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+93, 10, 10, 10, 0.6313625799139534, -0.36862421616962854, 0.4798641390541372, 0.4850029772976197, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+94, 10, 10, 10, 0.49177120964744175, -0.4424540541110292, 0.6777333605747885, 0.3210498081709594, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+95, 10, 10, 10, 0.8246891660188285, 0.1752699895506834, 0.3847343601466685, -0.3756962634051689, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+96, 10, 10, 10, 0.4419301327037396, -0.5478341958360887, 0.42583242298949087, 0.5685439290081115, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+97, 10, 10, 10, 0.2939080316260151, 0.4805270712848624, 0.17488949898358022, -0.8075428569762638, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+98, 10, 10, 10, 0.5931850114548308, 0.26799387180293144, 0.7269751579205579, -0.21867315022148007, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+99, 10, 10, 10, 0.27725609293554526, 0.721179642507613, 0.47598802101937426, -0.42007664301739933, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+100, 10, 10, 10, 0.35653502696378553, 0.10959554342072078, 0.9268734207421429, -0.04215748251506721, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+101, 10, 10, 10, 0.10196956239813731, -0.15074439627848488, 0.01563438207468704, 0.9831754174266717, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+102, 10, 10, 10, 0.7672768895325736, -0.22818366890284905, 0.373535562505215, 0.4687105413569941, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+103, 10, 10, 10, 0.07562164011345983, 0.9153841665334049, 0.2045674950760529, -0.3383863696498472, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+104, 10, 10, 10, 0.08830098410740626, -0.7627033298814057, 0.10660267816792258, 0.631761375679857, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+105, 10, 10, 10, 0.2922989060056242, 0.47189183068761387, 0.814365668650263, -0.1693753447288525, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+106, 10, 10, 10, 0.2254370608352935, 0.7172746015774941, 0.26853917704864844, -0.6021478123549283, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+107, 10, 10, 10, 0.4140335340185152, -0.3170448915284167, 0.838789463211192, 0.15649602509250463, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+108, 10, 10, 10, 0.2158602671945315, 0.5207143931470039, 0.13802140565598145, -0.8143776503545515, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+109, 10, 10, 10, 0.4188549177756624, 0.33852646022566013, 0.1718978352062356, -0.8248706127833852, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+110, 10, 10, 10, 0.796682839103678, -0.20331399706375314, 0.40120760395434596, 0.40372308703475945, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+111, 10, 10, 10, 0.7638685199745074, -0.048449679491211706, 0.6409551677230291, 0.057740676462076077, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+112, 10, 10, 10, 0.04677030565218217, -0.9477498345943784, 0.269203380665742, 0.1646582198788302, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+113, 10, 10, 10, 0.32522284935484913, -0.5837007097003991, 0.27452719861441144, 0.6914899832779121, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+114, 10, 10, 10, 0.18168872093477043, 0.4574224145017561, 0.09605983436547202, -0.8651742319429936, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+115, 10, 10, 10, 0.5546465712751663, -0.43771344259344425, 0.5582578253245403, 0.43488196514642047, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+116, 10, 10, 10, 0.8499631428213267, 0.14633365906813, 0.3122931758445145, -0.39827388615119186, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+117, 10, 10, 10, 0.49055108333569086, 0.5093793604135504, 0.5058085617325478, -0.4940141705466694, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+118, 10, 10, 10, 0.4293422190853211, 0.08497320792004005, 0.8982177361153371, -0.040616639133591745, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+119, 10, 10, 10, 0.20382751000894742, 0.47303621463476897, 0.1134867577031528, -0.8495951045254364, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+120, 10, 10, 10, 0.7827061170921933, 0.14996914749461218, 0.5675419626433897, -0.2068248285508541, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+121, 10, 10, 10, 0.7672325982131893, 0.22917370978597568, 0.3791025053836105, -0.46380474490225054, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+122, 10, 10, 10, 0.04199246999111688, 0.5434041136115885, 0.027230883996687952, -0.8379779715068935, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+123, 10, 10, 10, 0.5070051022480349, -0.48612961276330474, 0.4414029277789565, 0.5583791554465696, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+124, 10, 10, 10, 0.8395669790628459, 0.07783449631828293, 0.5229273280451802, -0.12496434865070409, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+125, 10, 10, 10, 0.6101863168917283, -0.3893396518902284, 0.4722607839103456, 0.5030477572999298, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+126, 10, 10, 10, 0.7630893526792489, 0.17095441571240796, 0.2243401326871454, -0.5814986951334524, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+127, 10, 10, 10, 0.6394070827855335, 0.35954732048640664, 0.4571616390273323, -0.5028792525214998, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+128, 10, 10, 10, 0.3083593498054342, -0.5582817825857049, 0.2346669269844844, 0.7335989340233233, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+129, 10, 10, 10, 0.4747049508943019, 0.5168722439188406, 0.43479675613800556, -0.5643138080134213, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+130, 10, 10, 10, 0.31177952068616155, -0.38796138167061617, 0.14134861110925992, 0.8557453283252073, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+131, 10, 10, 10, 0.15926811532175314, 0.8313754917470955, 0.301989680661952, -0.43846401441603405, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+132, 10, 10, 10, 0.8230347864861381, 0.05964220562618508, 0.08797733297348226, -0.557957468293627, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+133, 10, 10, 10, 0.18437623425478866, 0.7779970786837704, 0.2665070504803188, -0.5382378116091652, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+134, 10, 10, 10, 0.03307501587228887, 0.8612013828770153, 0.5040282528720545, -0.056513199896207046, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+135, 10, 10, 10, 0.6075142856427606, -0.3509864494666956, 0.3407233929305388, 0.6258134502714293, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+136, 10, 10, 10, 0.21893737457804507, 0.7789491088499582, 0.4467329755820822, -0.3817516998813594, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+137, 10, 10, 10, 0.11068913631172914, -0.8742756478769924, 0.2364751466619641, 0.40923038944222023, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+138, 10, 10, 10, 0.47581509363014923, -0.37100220210066764, 0.763187922563516, 0.2313040370667412, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+139, 10, 10, 10, 0.22760747952685806, 0.6768778683240805, 0.6599502653216801, -0.23344556954100423, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+140, 10, 10, 10, 0.5776587394027014, -0.1326629343011255, 0.09582772418550595, 0.7997049292906251, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+141, 10, 10, 10, 0.7487198616969003, -0.1673040013783753, 0.6073651557286537, 0.20624138146857737, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+142, 10, 10, 10, 0.6142475925476283, -0.3638369783670389, 0.5881738628227142, 0.37996586072223965, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+143, 10, 10, 10, 0.4565058391286976, -0.506024430573746, 0.36379947044543, 0.6349737315885945, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+144, 10, 10, 10, 0.14854647549980365, -0.16380098214922953, 0.9749257860092658, 0.024957857234728063, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+145, 10, 10, 10, 0.3321798408724244, -0.5050421234146911, 0.21904139160654443, 0.7659046126364687, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+146, 10, 10, 10, 0.7810522623291268, -0.21855256171312268, 0.4274539545405077, 0.3993435338488232, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+147, 10, 10, 10, 0.2004104157797916, -0.7720401819878745, 0.2937013068563464, 0.5268103691025594, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+148, 10, 10, 10, 0.4902841849636235, 0.34635049831024967, 0.7686743015743182, -0.22091303355400096, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+149, 10, 10, 10, 0.4506606316327515, -0.4183329530992542, 0.747150338007714, 0.2523269859975057, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+150, 10, 10, 10, 0.8619300781119265, 0.12281512400970314, 0.24978837989948569, -0.42379092843953114, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+151, 10, 10, 10, 0.6141462858034377, -0.33694314632309447, 0.6348635027281612, 0.3259478312298856, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+152, 10, 10, 10, 0.8111869488696912, -0.15827598493850906, 0.5013362752011037, 0.2560983907460358, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+153, 10, 10, 10, 0.5769100755478828, -0.23190724379792496, 0.7633308136268483, 0.17527083035451096, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+154, 10, 10, 10, 0.18590716771483545, -0.81409164668156, 0.38826228000906193, 0.3898021520178138, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+155, 10, 10, 10, 0.09787890847352781, -0.8257305344987499, 0.15119990686711873, 0.5345347433383673, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+156, 10, 10, 10, 0.8542208785816139, -0.10894874878198164, 0.46782747368872507, 0.1989329424608242, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+157, 10, 10, 10, 0.22698070527809633, 0.7572181864207314, 0.5124578291375754, -0.3353913399907039, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+158, 10, 10, 10, 0.3940606840073227, 0.359051556714734, 0.8286395226071765, -0.17074747000690155, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+159, 10, 10, 10, 0.5126209820922154, -0.36483346901505004, 0.25467958320662293, 0.7343395525933204, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+160, 10, 10, 10, 0.3419729954690347, -0.5003463912539985, 0.2242002908877664, 0.763179001738699, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+161, 10, 10, 10, 0.42897479342347156, 0.5496920627930056, 0.5990702683659794, -0.39361666157515923, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+162, 10, 10, 10, 0.8108283401631726, 0.11993279745746985, 0.1786633870875983, -0.544291209736706, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+163, 10, 10, 10, 0.25932409726962635, -0.7271348294113674, 0.5239185820745542, 0.35991008847930844, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+164, 10, 10, 10, 0.4046315384124484, 0.5123889284505544, 0.6965086838420073, -0.29766853622098305, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+165, 10, 10, 10, 0.30882680625907294, -0.6160676499500585, 0.28570392484692175, 0.6659278652736329, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+166, 10, 10, 10, 0.5803478552419944, 0.35474021906295394, 0.6643168363081162, -0.3099014115694863, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+167, 10, 10, 10, 0.9608026048674474, 0.004300717434184161, 0.27679776365036957, -0.014928373911222781, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+168, 10, 10, 10, 0.6523715748349084, -0.21283911066287164, 0.19840910938889048, 0.6998175952569119, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+169, 10, 10, 10, 0.10662462068859575, -0.2861081451760557, 0.9517068086710192, 0.03205417065147827, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+170, 10, 10, 10, 0.033950015331173374, -0.2573346752394332, 0.009046977759022176, 0.9656833919933884, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+171, 10, 10, 10, 0.7839168408938, -0.21135869080429784, 0.45847743763770205, 0.3613866759604521, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+172, 10, 10, 10, 0.0840141429792529, 0.1269216696249993, 0.9882894812801627, -0.01078956672211849, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+173, 10, 10, 10, 0.492117154765189, 0.38469077795487483, 0.7375269077443749, -0.2566861345988688, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+174, 10, 10, 10, 0.7081062946838257, -0.018435878444468527, 0.7056226437405153, 0.018500769058872053, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+175, 10, 10, 10, 0.5335214913872649, 0.24136360530778034, 0.7942361091120674, -0.16213399163427383, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+176, 10, 10, 10, 0.6853570458505461, 0.16555560162420266, 0.689797158446196, -0.1644899470284258, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+177, 10, 10, 10, 0.057281239941457306, 0.8942335740517077, 0.4274393569662719, -0.1198364331317405, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+178, 10, 10, 10, 0.2521849396402645, 0.7317225650792388, 0.5280999317381635, -0.3494213875403769, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+179, 10, 10, 10, 0.5076003559748548, -0.37334362728976667, 0.7320835715818292, 0.2588630116418976, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+180, 10, 10, 10, 0.3093597540532416, 0.5213008268276187, 0.210251658721458, -0.7670307885123221, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+181, 10, 10, 10, 0.5032693621978402, 0.36861123485581826, 0.7403053165842985, -0.2505868010252522, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+182, 10, 10, 10, 0.7528400040534805, 0.178427775533268, 0.22711536344151628, -0.5914508169779066, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+183, 10, 10, 10, 0.10602642178358879, -0.5211768664756757, 0.06544858993565932, 0.8443041832241495, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+184, 10, 10, 10, 0.7305676036771528, -0.1683294453786163, 0.6325676306286276, 0.19440773378863827, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+185, 10, 10, 10, 0.7148640243514304, -0.19516301494369354, 0.6344485524379869, 0.2198996557421317, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+186, 10, 10, 10, 0.024578787756304805, -0.7906035349034931, 0.03180332192661652, 0.6110077597747541, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+187, 10, 10, 10, 0.7896943964621346, 0.13718052469055816, 0.566573551882094, -0.19120322735151835, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+188, 10, 10, 10, 0.5792112233375097, 0.4042077849361332, 0.40160997030187784, -0.5829578519164269, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+189, 10, 10, 10, 0.2264437186782381, -0.1588078754285162, 0.037449248034779954, 0.9602608264397133, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+190, 10, 10, 10, 0.606619614937339, -0.2603539846128004, 0.7182452897923607, 0.21989122119948315, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+191, 10, 10, 10, 0.7665844559160616, 0.19199118403789484, 0.2668005041499678, -0.5516386028777593, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+192, 10, 10, 10, 0.11897055249045874, 0.8310650768428607, 0.1949710629239719, -0.507112542060026, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+193, 10, 10, 10, 0.3807136962910187, -0.23920951770813031, 0.8873000695714502, 0.10263758879072274, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+194, 10, 10, 10, 0.6548761974287247, -0.3438444292041034, 0.44991582049127093, 0.5004836950573565, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+195, 10, 10, 10, 0.37135451373176376, -0.33071650899793054, 0.8556404322974844, 0.1435335027965275, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+196, 10, 10, 10, 0.27117684245692025, -0.3805992903750109, 0.8762033749045021, 0.11779196104613139, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+197, 10, 10, 10, 0.5209257007437567, -0.4621955164513284, 0.4076592548212892, 0.5906146381825184, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+198, 10, 10, 10, 0.9334832204228574, 0.004016416510845255, 0.35844600585265485, -0.010459755047862241, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+199, 10, 10, 10, 0.46549242263388096, 0.07874703308705015, 0.880558228288268, -0.04162830580571357, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+200, 10, 10, 10, 0.4686772928199199, -0.4435038438667193, 0.7047351642615322, 0.2949479342590943, #atom_id|shapex|shapey|shapez|quatw|quati|quatj|quatk
+
+PairIJ Coeffs
+
+1 1 lj/cut/dipole/cut 0.0 0 0 200
+1 2 none
+2 2 none
+
