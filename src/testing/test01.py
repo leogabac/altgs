@@ -28,6 +28,7 @@ def create_simulation(params,size,realization):
     
     N = size 
     a = params['lattice_constant']
+    params['total_time'] = 180*ureg.s
 
     sp = ice.spins()
     sp.create_lattice('square', [N,N], lattice_constant=a ,border='periodic')

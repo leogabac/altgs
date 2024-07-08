@@ -14,7 +14,6 @@ import itertools
 
 from math import isclose
 
-from montecarlo_tools import *
 from auxiliary import *
 
 ureg = ice.ureg

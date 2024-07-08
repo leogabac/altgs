@@ -16,7 +16,6 @@ sys.path.insert(0, './auxnumerics/')
 import icenumerics as ice
 
 import auxiliary as aux
-import montecarlo_tools as mc
 import chirality_tools as chir
 ureg = ice.ureg
 
@@ -86,7 +85,18 @@ def clean_data(sim_path,realization):
     else:
         print("Skip")
     
-DRIVE = r'../data/test01/'
+
+os.system('clear')
+print('CLEANING DATA')
+
+if len(sys.argv) != 2:
+    print("Usage: python cleaning.py <testXX>")
+    sys.exit(1)
+
+script_name = sys.argv[0][:-3]
+usr_input = sys.argv[1]
+
+DRIVE = f'../data/{usr_input}/'
 SIZES = next(os.walk(DRIVE))[1]
 
 for size in SIZES:

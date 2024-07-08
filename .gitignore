@@ -1,5 +1,5 @@
 data/
-scripts/lammps_files
+src/testing/lammps_files/*
 *.lammpstrj
 *.lmpdata
 *.lmpin

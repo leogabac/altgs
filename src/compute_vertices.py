@@ -27,14 +27,23 @@ from parameters import params
 
 ureg = ice.ureg
 idx = pd.IndexSlice
+os.system('clear')
+print('COMPUTING VERTICES')
 
-SIZES = ['10']
-DATA_PATH = r'../data/test01/'
+if len(sys.argv) != 2: 
+    print("Usage: python compute_vertices.py <testXX>")
+    sys.exit(1)
+
+script_name = sys.argv[0][:-3]
+usr_input = sys.argv[1]
+
+DATA_PATH = f'../data/{usr_input}/'
+SIZES = next(os.walk(DATA_PATH))[1]
 REALIZATIONS = 10
 
 # first i want to loop all possible sizes
 for strsize in SIZES:
-    print(f"===== size {strsize} =====")
+    print(f"N: {strsize}")
     params['size'] = int(strsize)
     
     # creating the respective folders
