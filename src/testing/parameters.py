@@ -16,15 +16,15 @@ params = {
 
     "trap_sep":10*ureg.um,
     "trap_height":4*ureg.pN*ureg.nm,
-    "trap_stiffness":1e-3*ureg.pN/ureg.nm,
+    "trap_stiffness":100e-3*ureg.pN/ureg.nm,
     "height_spread":0,
     "susceptibility_spread":0,
     "isperiodic":True,
 
     "total_time":TOTAL_TIME,
     "framespersec":20*ureg.Hz,
-    "dt":10*ureg.ms,
-    "max_field":7*ureg.mT,
+    "dt":0.1*ureg.ms,
+    "max_field":10*ureg.mT,
     "sim_temp":300*ureg.K,
     "sim_dipole_cutoff":200*ureg.um,
 }
