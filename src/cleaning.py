@@ -85,10 +85,6 @@ def clean_data(sim_path,realization):
     else:
         print("Skip")
     
-
-os.system('clear')
-print('CLEANING DATA')
-
 if len(sys.argv) != 2:
     print("Usage: python cleaning.py <testXX>")
     sys.exit(1)

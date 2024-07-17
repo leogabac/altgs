@@ -27,8 +27,6 @@ from parameters import params
 
 ureg = ice.ureg
 idx = pd.IndexSlice
-os.system('clear')
-print('COMPUTING VERTICES')
 
 if len(sys.argv) != 2: 
     print("Usage: python compute_vertices.py <testXX>")
@@ -67,7 +65,7 @@ for strsize in SIZES:
             continue
         
         # Importing files
-        print(f"working on... {trj_file} -")
+        print(f"working on... {trj_file}")
         try:
             trj = pd.read_csv(trj_file, index_col=[0,1])
         except:

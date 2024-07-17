@@ -24,7 +24,7 @@ params = {
     "total_time":TOTAL_TIME,
     "framespersec":20*ureg.Hz,
     "dt":0.1*ureg.ms,
-    "max_field":10*ureg.mT,
+    "max_field":15*ureg.mT,
     "sim_temp":300*ureg.K,
     "sim_dipole_cutoff":200*ureg.um,
 }
