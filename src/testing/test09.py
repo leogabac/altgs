@@ -33,13 +33,14 @@ def create_simulation(params,trj,size,realization):
     global fy
     global fz
 
+    params['size'] = size
     N = size 
     a = params['lattice_constant']
     
     params['total_time'] = 180*ureg.s
     params['trap_stiffness'] = 1e-3*ureg.pN/ureg.nm
-    params['dt'] = 0.1*ureg.ms
-    params['max_field'] = 0*ureg.mT
+    params['dt'] = 10*ureg.ms
+    params['max_field'] = 6*ureg.mT
 
 
     sp = ice.spins()
