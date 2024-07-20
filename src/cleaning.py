@@ -58,11 +58,12 @@ def clean_data(sim_path,realization):
     
     # load the file
     filepath = os.path.join(sim_path,'trj',f'trj{realization}.csv')
-    print("Cleaning...",filepath)
     
     # If the file does not exist, just return
     if not os.path.isfile(filepath):
         return None
+    else:
+        print("Cleaning...",filepath)
     
     df = pd.read_csv(filepath,index_col=[0,1])
     

@@ -35,14 +35,26 @@ if len(sys.argv) != 2:
 script_name = sys.argv[0][:-3]
 usr_input = sys.argv[1]
 
+# I might sometimes provide a single size so what usr_input is testXX/size/
+parts = usr_input.split('/')
+if len(parts)>1:
+    has_pre_dir = True 
+else:
+    has_pre_dir = False 
+
 DATA_PATH = f'../data/{usr_input}/'
 SIZES = next(os.walk(DATA_PATH))[1]
 REALIZATIONS = 10
 
 # first i want to loop all possible sizes
 for strsize in SIZES:
+
     print(f"N: {strsize}")
-    params['size'] = int(strsize)
+    if has_pre_dir:
+        params['size'] = int(parts[-1])
+    else:
+        params['size'] = int(strsize)
+
     
     # creating the respective folders
     trj_path = os.path.join(DATA_PATH,strsize,"trj")
@@ -65,11 +77,10 @@ for strsize in SIZES:
             continue
         
         # Importing files
-        print(f"working on... {trj_file}")
         try:
             trj = pd.read_csv(trj_file, index_col=[0,1])
+            print(f"working on... {trj_file}")
         except:
-            print(f"skipping trj")
             continue
 
         # Doing shit with the vertices
