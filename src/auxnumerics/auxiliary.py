@@ -169,6 +169,16 @@ def vrt_averages(counts,framerate):
     fractions["time"] = time
     return fractions
 
+def do_vertices(params,data_path):
+    vrt_path = os.path.join(data_path,"vertices/")
+    vertices = vrt_dict(vrt_path)
+    counts = vrt_counts(vertices)
+    vrt_ts = vrt_averages(counts,params["framespersec"].magnitude)
+    types = vrt_ts.columns.to_list()[1:]
+    t = vrt_ts["time"].to_numpy()
+    vrt_cuentas = vrt_ts[types].to_numpy()
+    return t, vrt_cuentas
+
 def trj2col(params,ctrj):
     """
         Reconstruct the colloidal ice object from simulation parameters.
@@ -383,3 +393,5 @@ def correlate_bframes(params,ts,sframes, stime= 0, etime = 60):
     
 def bint(x):
     return np.array([int(i) for i in x])
+
+

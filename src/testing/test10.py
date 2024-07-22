@@ -1,7 +1,7 @@
 # ====================
-# Test 03
+# Test 10 
 # Start from an ordered state 
-# z->x, let it be, x->z 
+# z->x  
 # ====================
 
 import os

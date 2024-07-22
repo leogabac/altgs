@@ -1,5 +1,5 @@
 # ============================================================= 
-# Script to compute the vertices for all sizes
+
 # God bless whoever reads this code
 # Author: leogabac
 # ============================================================= 
