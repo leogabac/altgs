@@ -16,7 +16,7 @@ from numba import jit,prange,float64,int64,complex128
 # own
 sys.path.insert(0, '../icenumerics/')
 import icenumerics as ice
-from auxiliary import *
+import auxiliary as aux
 
 ureg = ice.ureg
 idx = pd.IndexSlice
@@ -69,6 +69,9 @@ def numpy2trj(centers,dirs,rels):
     trj = trj.set_index(['frame', 'id'])
     return trj
 
+def trj2trj(trj):
+    return numpy2trj(*trj2numpy(trj))
+
 def indices_lattice(vrt_lattice,centers,a,N):
     """
         Make a matrix of size (L,L,4) where the (i,j,:) element
@@ -88,16 +91,16 @@ def indices_lattice(vrt_lattice,centers,a,N):
             cur_vrt = vrt_lattice[i,j,:] 
 
             # get the positions with pbc
-            up = fix_position(cur_vrt + np.array([0,a/2,0]),a,N)
-            down = fix_position( cur_vrt + np.array([0,-a/2,0]), a, N)
-            left = fix_position( cur_vrt + np.array([-a/2,0,0]), a, N)
-            right = fix_position(cur_vrt + np.array([a/2,0,0]), a, N)
+            up = aux.fix_position(cur_vrt + np.array([0,a/2,0]),a,N)
+            down = aux.fix_position( cur_vrt + np.array([0,-a/2,0]), a, N)
+            left = aux.fix_position( cur_vrt + np.array([-a/2,0,0]), a, N)
+            right = aux.fix_position(cur_vrt + np.array([a/2,0,0]), a, N)
 
             # get the indices
-            up_idx = get_idx_from_position(centers,up,tol=0.05)
-            down_idx = get_idx_from_position(centers,down,tol=0.05)
-            left_idx = get_idx_from_position(centers,left,tol=0.05)
-            right_idx = get_idx_from_position(centers,right,tol=0.05)
+            up_idx = aux.get_idx_from_position(centers,up,tol=0.05)
+            down_idx = aux.get_idx_from_position(centers,down,tol=0.05)
+            left_idx = aux.get_idx_from_position(centers,left,tol=0.05)
+            right_idx = aux.get_idx_from_position(centers,right,tol=0.05)
 
             indices_matrix[i,j,:] = np.array([up_idx,down_idx,left_idx,right_idx])
     
@@ -182,4 +185,19 @@ def dipole_lattice(centers,dirs,rels,vrt_lattice,indices_matrix):
 
     return arrow_lattice
 
+@jit(nopython=True)
+def charge_op(charged_vertices):
+    """
+        Computes the kappa order parameter
+        ----------
+        Parameters:
+        * charged_vertices: Array (N,N) where (i,j) has the charge of vertex (i,j)
+    """
 
+    kappa = 0
+    rows,cols = charged_vertices.shape 
+    for i in range(rows):
+        for j in range(cols):
+            kappa += charged_vertices[i,j]*(-1)**(i+j)
+
+    return kappa

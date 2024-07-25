@@ -370,7 +370,7 @@ def autocorrelation(ts):
 
 def correlate_bframes(params,ts,sframes, stime= 0, etime = 60):
     """
-        Computes the autocorrelations between some times (start,end)
+        Computes the autocorrelations between some times (start,enD)
         Returns an array in which the rows are the different particles.
         ----------
         Parameters:

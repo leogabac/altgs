@@ -16,16 +16,15 @@ sys.path.insert(0,'../auxnumerics/')
 import icenumerics as ice 
 import concurrent.futures 
 import auxiliary as aux
+import vertices as vrt
 
 from parameters import params 
 from tqdm import tqdm 
 import importlib
+import argparse
 
 ureg = ice.ureg 
 idx = pd.IndexSlice
-
-
-
 
 def create_simulation(params,trj,size,realization):
     
@@ -110,9 +109,25 @@ def load_simulation(params,trj,data_path,size,realization):
 
 # ===== MAIN ROUTINE ===== #
 
-if len(sys.argv) != 2:
-    print("Usage: python testXX.py <size>")
-    sys.exit(1)
+parser = argparse.ArgumentParser(description="Run a rotation z -> x for 60s")
+
+# flags
+parser.add_argument('-s', '--sims', action='store_true', help='run simulations')
+parser.add_argument('-v', '--vertices', action='store_true', help='run vertices')
+parser.add_argument('-a', '--averages', action='store_true', help='run vertices averages')
+parser.add_argument('-k', '--kappa', action='store_true', help='run kappa order parameter')
+
+# positional arguments
+parser.add_argument('size', type=str, help='The size input')
+
+args = parser.parse_args()
+
+sth_passed = any([args.sims, args.vertices, args.averages, args.kappa])
+if not sth_passed:
+    args.sims = True
+    args.vertices = True
+    args.averages = True
+    args.kappa = True
 
 # importing the field
 script_name = sys.argv[0][:-3]
@@ -123,7 +138,7 @@ fy = module.fy
 fz = module.fz
 
 
-SIZE = int(sys.argv[1]) 
+SIZE = args.size
 REALIZATIONS = list(range(1,11)) 
 FIELDS = list(range(21)) 
 
@@ -134,39 +149,87 @@ GSTRJ = pd.read_csv(f'../../data/states/ice/{SIZE}.csv', index_col='id')
 if not os.path.isdir(SIZE_PATH):
     os.makedirs(SIZE_PATH)
 
-for B_mag in FIELDS:
-    os.system('clear')
 
-    params["max_field"] = B_mag*ureg.mT
-    print('Field:', params["max_field"])
-    field_path = os.path.join(SIZE_PATH,str(B_mag)+'mT')
-    if not os.path.isdir(field_path):
-        os.mkdir(field_path)
+if args.sims:
+    print('RUNNING SIMULATIONS')
+    for B_mag in FIELDS:
+        os.system('clear')
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=14) as executor:
-        results = list(
-            executor.map(
-                run_simulation,
-                [params] * len(REALIZATIONS),
-                [GSTRJ] * len(REALIZATIONS),
-                [SIZE] * len(REALIZATIONS),
-                REALIZATIONS
+        params["max_field"] = B_mag*ureg.mT
+        print('Field:', params["max_field"])
+        field_path = os.path.join(SIZE_PATH,str(B_mag)+'mT')
+        if not os.path.isdir(field_path):
+            os.mkdir(field_path)
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=14) as executor:
+            results = list(
+                executor.map(
+                    run_simulation,
+                    [params] * len(REALIZATIONS),
+                    [GSTRJ] * len(REALIZATIONS),
+                    [int(SIZE)] * len(REALIZATIONS),
+                    REALIZATIONS
+                )
             )
-        )
-    for i in REALIZATIONS:
-        print(f'===== Realization {i} =====')
-        load_simulation(params,GSTRJ,field_path,SIZE,i)
+        for i in REALIZATIONS:
+            print(f'===== Realization {i} =====')
+            load_simulation(params,GSTRJ,field_path,int(SIZE),i)
 
-# here I will clean the data and compute the vertices
-# i will take advantage and not properly use my previous code haha
-os.system('clear')
-string_part = f'{script_name}/{SIZE}' 
+# i will take advantage and not properly using my previous code haha
+if args.vertices:
+    string_part = f'{script_name}/{SIZE}' 
 
-os.chdir('../')
-os.system(f'python cleaning.py {string_part}')
+    os.system('clear')
+    os.chdir('../')
+    print('CLEANING')
+    os.system(f'python cleaning.py {string_part}')
 
-os.system('clear')
-os.system(f'python compute_vertices.py {string_part}')
+    os.system('clear')
+    print('VERTICES')
+    os.system(f'python compute_vertices.py {string_part}')
 
+if args.averages:
+    FIELDS = next(os.walk(SIZE_PATH))[1]
+    for i,field in tqdm(enumerate(FIELDS)):
 
+        # this part computes the vertices average for all fields, and saves them to a file
+        path = os.path.join(SIZE_PATH,field)
+        t, vrt_counts = aux.do_vertices(params,path)
 
+        df = pd.DataFrame(vrt_counts, columns = ['I','II','III','IV','V','VI'])
+        df['time'] = t
+        df['field'] = [int(field[:-2])] * len(t)
+
+        if i==0:
+            df.to_csv(os.path.join(SIZE_PATH,'average_counts.csv'),index=False)
+        else:
+            df.to_csv(os.path.join(SIZE_PATH,'average_counts.csv'),mode='a',index=False,header=False)
+
+if args.kappa:
+    FIELDS = next(os.walk(SIZE_PATH))[1]
+    for i,field in tqdm(enumerate(FIELDS)):
+        path = os.path.join(SIZE_PATH,field,'trj')
+
+        cumm_kappa = []
+        for r in REALIZATIONS:
+            # load the trj files
+            trj = pd.read_csv(os.path.join(path,f'xtrj{r}.csv'), index_col=['frame','id'])
+            last_frame = trj.index.get_level_values('frame').unique()[-1]
+            # take the last frame state
+            sel_trj = trj.loc[idx[last_frame,:]]
+            # compute the topology and OP
+            centers, dirs, rels = vrt.trj2numpy(sel_trj)
+            dirs = dirs / np.max(dirs)
+            vrt_lattice = vrt.create_lattice(params['lattice_constant'].magnitude,int(SIZE))
+            idx_lattice = vrt.indices_lattice(vrt_lattice,centers, params['lattice_constant'].magnitude, int(SIZE))  
+            kappa = vrt.charge_op(vrt.get_charge_lattice(idx_lattice,dirs))
+
+            data = [int(field[:-2]), r, last_frame/params['framespersec'].magnitude, kappa]
+            cumm_kappa.append(data)
+
+        df = pd.DataFrame(cumm_kappa, columns=['field','realization','t','kappa'])
+        if i==0:
+            df.to_csv(os.path.join(SIZE_PATH,'kappa.csv'),index=False)
+        else:
+            df.to_csv(os.path.join(SIZE_PATH,'kappa.csv'),mode='a',index=False,header=False)
+       
