@@ -9,7 +9,7 @@ script_name = sys.argv[0][:-3]
 testno = sys.argv[1]
 
 previous = int(testno[-2:]) - 1
-pretest = f'test0{previous}'
+pretest = f'test{previous}'
 
 files = [
     f'{testno}.py',

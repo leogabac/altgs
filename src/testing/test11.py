@@ -27,6 +27,7 @@ idx = pd.IndexSlice
 
 
 def create_simulation(params, trj, size, realization):
+
     global fx
     global fy
     global fz
@@ -35,7 +36,7 @@ def create_simulation(params, trj, size, realization):
     N = size
     a = params['lattice_constant']
 
-    params['total_time'] = 60*ureg.s
+    print('time sanity check: ', params['total_time'])
 
     sp = ice.spins()
     sp.create_lattice('square', [N, N], lattice_constant=a, border='periodic')
@@ -44,13 +45,11 @@ def create_simulation(params, trj, size, realization):
                             susceptibility=params['particle_susceptibility'],
                             diffusion=params['particle_diffusion'],
                             temperature=params['particle_temperature'],
-                            density=params['particle_density']
-                            )
+                            density=params['particle_density'])
 
     trap = ice.trap(trap_sep=params['trap_sep'],
                     height=params['trap_height'],
-                    stiffness=params['trap_stiffness']
-                    )
+                    stiffness=params['trap_stiffness'])
 
     params['particle'] = particle
     params['trap'] = trap
@@ -72,8 +71,7 @@ def create_simulation(params, trj, size, realization):
                    timestep=params['dt'],
                    run_time=params['total_time'],
                    output=['x', 'y', 'z', 'mux', 'muy', 'muz'],
-                   processors=1
-                   )
+                   processors=1)
 
     col.sim.field.fieldx = "".join(fx)
     col.sim.field.fieldy = "".join(fy)
@@ -112,17 +110,14 @@ def load_simulation(params, trj, data_path, size, realization):
 parser = argparse.ArgumentParser(description="Run a rotation z -> x for 60s")
 
 # flags
-parser.add_argument('-s', '--sims', action='store_true',
-                    help='run simulations')
-parser.add_argument('-v', '--vertices',
-                    action='store_true', help='run vertices')
-parser.add_argument('-a', '--averages', action='store_true',
-                    help='run vertices averages')
-parser.add_argument('-k', '--kappa', action='store_true',
-                    help='run kappa order parameter')
+parser.add_argument('-s', '--sims', action='store_true', help='run simulations')
+parser.add_argument('-v', '--vertices', action='store_true', help='run vertices')
+parser.add_argument('-a', '--averages', action='store_true', help='run vertices averages')
+parser.add_argument('-k', '--kappa', action='store_true', help='run kappa order parameter')
 
 # positional arguments
 parser.add_argument('size', type=str, help='The size input')
+parser.add_argument('time', type=str, help='The size input')
 
 args = parser.parse_args()
 
@@ -136,15 +131,22 @@ if not sth_passed:
 # importing the field
 script_name = sys.argv[0][:-3]
 module_name = f'{script_name}_field'
+
+params['total_time'] = int(args.time) * ureg.s
+
 module = importlib.import_module(module_name)
 fx = module.fx
 fy = module.fy
 fz = module.fz
 
+print(fx)
+print(fy)
+print(fz)
 
 SIZE = args.size
 REALIZATIONS = list(range(1, 11))
-FIELDS = list(range(21))
+# FIELDS = list(range(21))
+FIELDS = [5]
 
 DATA_PATH = f'../../data/{script_name}/'
 SIZE_PATH = os.path.join(DATA_PATH, str(SIZE))
@@ -159,11 +161,13 @@ if args.sims:
     for B_mag in FIELDS:
         os.system('clear')
 
-        params["max_field"] = B_mag*ureg.mT
+        params["max_field"] = B_mag * ureg.mT
+        print('Time: ', params['total_time'])
         print('Field:', params["max_field"])
-        field_path = os.path.join(SIZE_PATH, str(B_mag)+'mT')
+        field_path = os.path.join(
+            SIZE_PATH, str(module.rtime), str(B_mag) + 'mT')
         if not os.path.isdir(field_path):
-            os.mkdir(field_path)
+            os.makedirs(field_path)
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=14) as executor:
             results = list(
@@ -181,7 +185,7 @@ if args.sims:
 
 # i will take advantage and not properly using my previous code haha
 if args.vertices:
-    string_part = f'{script_name}/{SIZE}'
+    string_part = f'{script_name}/{SIZE}/{str(module.rtime)}'
 
     os.system('clear')
     os.chdir('../')
@@ -191,21 +195,29 @@ if args.vertices:
     os.system('clear')
     print('VERTICES')
     os.system(f'python compute_vertices.py {string_part}')
+    os.chdir('./testing')
 
+# this might be broken, but i will test post sim
 if args.averages:
-    FIELDS = next(os.walk(SIZE_PATH))[1]
+    global_time = str(module.rtime)
+    timepath = os.path.join(SIZE_PATH, global_time)
+    FIELDS = next(os.walk(timepath))[1]
+    print(FIELDS)
     for i, field in tqdm(enumerate(FIELDS)):
 
-        # this part computes the vertices average for all fields, and saves them to a file
-        path = os.path.join(SIZE_PATH, field)
+        # this part computes the vertices average for all fields,
+        # and saves them to a file
+        path = os.path.join(timepath, field)
         t, vrt_counts = aux.do_vertices(params, path)
 
         df = pd.DataFrame(vrt_counts, columns=[
                           'I', 'II', 'III', 'IV', 'V', 'VI'])
         df['time'] = t
         df['field'] = [int(field[:-2])] * len(t)
+        df['total_time'] = [global_time] * len(t)
 
-        if i == 0:
+        if i == 0 and int(global_time) == 30:
+            print('Making headers')
             df.to_csv(os.path.join(
                 SIZE_PATH, 'average_counts.csv'), index=False)
         else:
@@ -213,7 +225,9 @@ if args.averages:
                       mode='a', index=False, header=False)
 
 if args.kappa:
-    FIELDS = next(os.walk(SIZE_PATH))[1]
+    field_path = os.path.join(SIZE_PATH, str(module.rtime))
+    FIELDS = next(os.walk(field_path))[1]
+
     for i, field in tqdm(enumerate(FIELDS)):
         path = os.path.join(SIZE_PATH, field, 'trj')
 
@@ -240,7 +254,7 @@ if args.kappa:
         df = pd.DataFrame(cumm_kappa, columns=[
                           'field', 'realization', 't', 'kappa'])
         if i == 0:
-            df.to_csv(os.path.join(SIZE_PATH, 'kappa.csv'), index=False)
+            df.to_csv(os.path.join(field_path, 'kappa.csv'), index=False)
         else:
-            df.to_csv(os.path.join(SIZE_PATH, 'kappa.csv'),
+            df.to_csv(os.path.join(field_path, 'kappa.csv'),
                       mode='a', index=False, header=False)

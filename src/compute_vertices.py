@@ -51,7 +51,7 @@ for strsize in SIZES:
 
     print(f"N: {strsize}")
     if has_pre_dir:
-        params['size'] = int(parts[-1])
+        params['size'] = int(parts[1])
     else:
         params['size'] = int(strsize)
 
