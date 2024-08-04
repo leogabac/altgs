@@ -145,8 +145,7 @@ print(fz)
 
 SIZE = args.size
 REALIZATIONS = list(range(1, 11))
-# FIELDS = list(range(21))
-FIELDS = [5]
+FIELDS = list(range(21))
 
 DATA_PATH = f'../../data/{script_name}/'
 SIZE_PATH = os.path.join(DATA_PATH, str(SIZE))
