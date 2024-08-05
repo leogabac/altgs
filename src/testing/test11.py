@@ -201,7 +201,6 @@ if args.averages:
     global_time = str(module.rtime)
     timepath = os.path.join(SIZE_PATH, global_time)
     FIELDS = next(os.walk(timepath))[1]
-    print(FIELDS)
     for i, field in tqdm(enumerate(FIELDS)):
 
         # this part computes the vertices average for all fields,
@@ -215,13 +214,11 @@ if args.averages:
         df['field'] = [int(field[:-2])] * len(t)
         df['total_time'] = [global_time] * len(t)
 
-        if i == 0 and int(global_time) == 30:
+        if i == 0 and int(global_time) == 1:
             print('Making headers')
-            df.to_csv(os.path.join(
-                SIZE_PATH, 'average_counts.csv'), index=False)
+            df.to_csv(os.path.join(SIZE_PATH, 'average_counts.csv'), index=False)
         else:
-            df.to_csv(os.path.join(SIZE_PATH, 'average_counts.csv'),
-                      mode='a', index=False, header=False)
+            df.to_csv(os.path.join(SIZE_PATH, 'average_counts.csv'), mode='a', index=False, header=False)
 
 if args.kappa:
     field_path = os.path.join(SIZE_PATH, str(module.rtime))
