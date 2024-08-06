@@ -1,7 +1,7 @@
 # ====================
-# Test 12
+# Test 13
 # Start from an ordered state
-# Instantaneous quench
+# Instantaneous quench but in the y direction
 # ====================
 
 import os
@@ -107,7 +107,7 @@ def load_simulation(params, trj, data_path, size, realization):
 # ===== MAIN ROUTINE ===== #
 
 
-parser = argparse.ArgumentParser(description="Heavyside step function field profile")
+parser = argparse.ArgumentParser(description="Heavyside step function field profile but on the y axis")
 
 # flags
 parser.add_argument('-s', '--sims', action='store_true', help='run simulations')

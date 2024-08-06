@@ -1,15 +1,24 @@
-import sys 
+import sys
 import os
+import argparse
 
-if len(sys.argv) != 2:
-    print("Usage: python new_test.py <testXX>")
-    sys.exit(1)
+parser = argparse.ArgumentParser(description="Heavyside step function field profile")
 
-script_name = sys.argv[0][:-3]
-testno = sys.argv[1]
+# flags
+parser.add_argument('-t', '--template', action='store', help='take a specific testno as template')
 
-previous = int(testno[-2:]) - 1
-pretest = f'test{previous}'
+# positional arguments
+parser.add_argument('name', type=str, help='new script name')
+
+args = parser.parse_args()
+
+testno = args.name
+
+if args.template is None:
+    previous = int(testno[-2:]) - 1
+    pretest = f'test{previous}'
+else:
+    pretest = args.template
 
 files = [
     f'{testno}.py',
@@ -23,7 +32,7 @@ prefiles = [
     f'{pretest}_field.py',
 ]
 
-for pre,new in zip(prefiles,files):
+for pre, new in zip(prefiles, files):
     if not os.path.isfile(new):
         os.system(f'cp {pre} {new}')
         print(f'created... {new}')

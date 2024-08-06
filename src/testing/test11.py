@@ -107,7 +107,7 @@ def load_simulation(params, trj, data_path, size, realization):
 # ===== MAIN ROUTINE ===== #
 
 
-parser = argparse.ArgumentParser(description="Run a rotation z -> x for 60s")
+parser = argparse.ArgumentParser(description="Run a rotation z -> x for many different times")
 
 # flags
 parser.add_argument('-s', '--sims', action='store_true', help='run simulations')
