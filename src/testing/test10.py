@@ -234,7 +234,7 @@ if args.kappa:
                 vrt_lattice, centers, params['lattice_constant'].magnitude, int(SIZE))
             kappa = vrt.charge_op(vrt.get_charge_lattice(idx_lattice, dirs))
 
-            data = [int(field[:-2]), r, last_frame/params['framespersec'].magnitude, kappa]
+            data = [int(field[:-2]), r, last_frame / params['framespersec'].magnitude, kappa]
             cumm_kappa.append(data)
 
         df = pd.DataFrame(cumm_kappa, columns=[
