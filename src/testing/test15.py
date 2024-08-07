@@ -1,5 +1,5 @@
 # ====================
-# Test 14
+# Test 15
 # Start from an ordered state
 # Same as test04 but very fast
 # ====================
@@ -112,23 +112,25 @@ parser.add_argument('-s', '--sims', action='store_true', help='run simulations')
 parser.add_argument('-v', '--vertices', action='store_true', help='run vertices')
 parser.add_argument('-a', '--averages', action='store_true', help='run vertices averages')
 parser.add_argument('-k', '--kappa', action='store_true', help='run order paramater')
+parser.add_argument('-r', '--rparallel', action='store_true', help='get rparallel')
 
 # positional arguments
 parser.add_argument('size', type=str, help='The size input')
 
 args = parser.parse_args()
 
-sth_passed = any([args.sims, args.vertices, args.averages, args.kappa])
+sth_passed = any([args.sims, args.vertices, args.averages, args.kappa, args.rparallel])
 if not sth_passed:
     args.sims = True
     args.vertices = True
     args.averages = True
     args.kappa = True
+    args.rparallel = True
 
 
 # importing the field
 
-params['total_time'] = 16 * ureg.s
+params['total_time'] = 9 * ureg.s
 params["max_field"] = 20 * ureg.mT
 
 script_name = sys.argv[0][:-3]
@@ -215,3 +217,31 @@ if args.kappa:
 
     df = pd.DataFrame(cumm_kappa, columns=['realization', 't', 'kappa'])
     df.to_csv(os.path.join(SIZE_PATH, 'kappa.csv'), index=False)
+
+if args.rparallel:
+    path = os.path.join(SIZE_PATH, 'trj')
+    make_headers = True
+    for r in REALIZATIONS:
+        # load the trj files
+        trj = pd.read_csv(os.path.join(path, f'xtrj{r}.csv'), index_col=['frame', 'id'])
+
+        for pid, cdf in trj.groupby('id'):
+
+            rel = cdf[['cx','cy','cz']].to_numpy()
+            spin = cdf[['dx','dy','dz']].to_numpy()
+            spin = spin/np.linalg.norm(spin, axis=1)[:,np.newaxis]
+
+            # rparallel = np.sum(rel*np.abs(spin), axis=1)
+            rparallel = np.sum(spin*np.abs(spin), axis=1)
+            time = cdf.t.to_numpy()
+
+            df = pd.DataFrame(rparallel, columns=['rp'])
+            df['t'] = time
+            df['id'] = [pid]*len(df)
+            df['realization'] = [r]*len(df)
+
+            if make_headers:
+                df.to_csv(os.path.join(SIZE_PATH,'rparallel.csv'),index=False)
+                make_headers = False
+            else:
+                df.to_csv(os.path.join(SIZE_PATH,'rparallel.csv'),mode='a',index=False,header=False)

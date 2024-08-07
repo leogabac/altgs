@@ -18,4 +18,3 @@ fz = [
     '0*v_Bmag*(time>60e6)*(time<=120e6)+',
     'v_Bmag*sin(PI/2/60e6*(time-120e6))*(time>120e6)*(time<=180e6)'
 ]
-
