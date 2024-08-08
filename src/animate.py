@@ -152,4 +152,4 @@ for frame in tqdm(frames[::5]):
     i = i + 1   
 
 os.chdir(targetdir)
-os.system(r'ffmpeg -framerate 30 -i %d.jpeg -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4')
+os.system(r'ffmpeg -framerate 10 -i %d.jpeg -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4')

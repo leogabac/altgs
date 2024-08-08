@@ -24,6 +24,7 @@ import vertices as vrt
 ureg = ice.ureg
 idx = pd.IndexSlice
 
+
 @jit(nopython=True)
 def get_idx_from_position(centers,pos,tol=0.1):
     """
@@ -32,7 +33,7 @@ def get_idx_from_position(centers,pos,tol=0.1):
         * centers: centers of the traps
         * pos: np array with a 3D coordinate
     """
-    
+
     for i,center in enumerate(centers):
         distance = np.linalg.norm(center - pos)
         if np.isclose(0,distance,atol=tol):
@@ -71,15 +72,16 @@ def fix_position(position,a,size):
 
     # Apply BC to x
     position[0] = position[0] % L
-    if position[0]<0:
+    if position[0] < 0:
         position[0] += L
 
     # Apply BC to y
     position[1] = position[1] % L
-    if position[1]<0:
+    if position[1] < 0:
         position[1] += L
 
     return position
+
 
 def classify_vertices(vrt):
     """
@@ -100,6 +102,7 @@ def classify_vertices(vrt):
     vrt.loc[vrt.eval("coordination==4 & charge == 4"),"type"] = 6
     return vrt
 
+
 def vrt_dict(path):
     """
         Walks path and imports all DFs into a Dictionary, classifies the vertices and drops boundaries.
@@ -114,18 +117,19 @@ def vrt_dict(path):
     numberExperiments = len(files)
     for i in range(1,numberExperiments+1):
         filePath = os.path.join(path,f"vertices{i}.csv")
-        
+
         # Check if the file exists, if not, skips.
-        if not os.path.isfile(filePath):continue
-        
+        if not os.path.isfile(filePath):
+            continue
+
         vrt = pd.read_csv(filePath, index_col=[0,1])
         vrt = classify_vertices(vrt)
         vrt = vrt.dropna()
         verticesExp[f"{i}"] = vrt
     return verticesExp
 
+
 def vrt_counts(verticesDict):
-    
     """
         Loops the verticesDict with all experiments and gets the counts for vertex type
         Returns a dictionary with the counts DF for all experiments
@@ -138,11 +142,10 @@ def vrt_counts(verticesDict):
     for key,experiment in verticesDict.items():
         currentCount = ice.count_vertices(experiment)
         countsDict[key] = currentCount
-    
     return countsDict
 
+
 def vrt_averages(counts,framerate):
-    
     """
         Averages over all realizations.
         ----------
@@ -153,12 +156,10 @@ def vrt_averages(counts,framerate):
     # Get a list containing all the different frames
     allFrames = counts["1"].index.get_level_values('frame').unique().to_list()
     time = np.array(allFrames)/framerate
-    
     numberFrames = len(allFrames)
     numberRealizations = len(counts)
-    
 
-    fractions = pd.DataFrame(columns=["time","1.0","2.0","3.0","4.0","5.0","6.0"], data = np.zeros((numberFrames,7)))
+    fractions = pd.DataFrame(columns=["time","1.0","2.0","3.0","4.0","5.0","6.0"], data=np.zeros((numberFrames,7)))
 
     for key,experiment in counts.items():
         for vertexType,vrt in experiment.groupby("type"):
@@ -169,7 +170,9 @@ def vrt_averages(counts,framerate):
     fractions["time"] = time
     return fractions
 
+
 def do_vertices(params,data_path):
+
     vrt_path = os.path.join(data_path,"vertices/")
     vertices = vrt_dict(vrt_path)
     counts = vrt_counts(vertices)
@@ -178,6 +181,7 @@ def do_vertices(params,data_path):
     t = vrt_ts["time"].to_numpy()
     vrt_cuentas = vrt_ts[types].to_numpy()
     return t, vrt_cuentas
+
 
 def trj2col(params,ctrj):
     """
@@ -194,22 +198,22 @@ def trj2col(params,ctrj):
     a = params["lattice_constant"]
     N = params["size"]
 
-    centers = [ row[:3].to_list() * ureg.um for _,row in ctrj.iterrows()]
-    directions = [ row[3:6].to_list() * ureg.um for _,row in ctrj.iterrows()]
+    centers = [row[:3].to_list() * ureg.um for _,row in ctrj.iterrows()]
+    directions = [row[3:6].to_list() * ureg.um for _,row in ctrj.iterrows()]
     arrangement = {
-        "centers" : centers,
-        "directions" : directions
+        "centers":centers,
+        "directions":directions
     }
 
     col = ice.colloidal_ice(arrangement, particle, trap,
-            height_spread = 0, 
-            susceptibility_spread = 0.1,
-            periodic = True)
+                            height_spread=0,
+                            susceptibility_spread=0.1,
+                            periodic=True)
     col.region = np.array([[0,0,-3*(particle_radius/a/N).magnitude],[1,1,3*(particle_radius/a/N).magnitude]])*N*a
-    
     return col
 
-def vrtcount_sframe(vrt, column = "type"):
+
+def vrtcount_sframe(vrt, column="type"):
     """
         Counts the vertices of a single frame df.
         ----------
@@ -220,7 +224,7 @@ def vrtcount_sframe(vrt, column = "type"):
     vrt_count = vrt.groupby(column).count().iloc[:,0]
     types = vrt_count.index.get_level_values(column).unique()
     counts = pd.DataFrame({"counts": vrt_count.values}, index=types)
-    counts["fraction"] = counts["counts"] / counts["counts"].sum() 
+    counts["fraction"] = counts["counts"] / counts["counts"].sum()
     return counts
 
 
@@ -246,8 +250,8 @@ def vrt_lastframe(path,last_frame=2399):
     except:
         vrt_lastframe(path,last_frame=last_frame-1)
   
-
     return v.vertices
+
 
 def vrt_at_frame(ctrj,frame):
     """
@@ -258,18 +262,15 @@ def vrt_at_frame(ctrj,frame):
         * last: last frame of the simulation
     """
 
-    
     ctrj = ctrj.loc[idx[frame,:]].drop(["t", "type"],axis=1)
 
     v = ice.vertices()
     v = v.trj_to_vertices(ctrj)
-  
 
     return v.vertices
 
 
 def min_from_domain(f,domain):
-    
     """
         Returns the value in domain that minimizes f.
         ----------
@@ -277,10 +278,11 @@ def min_from_domain(f,domain):
         * f: function
         * domain: iterable
     """
-    
+
     feval = [f(x) for x in domain]
     idx = np.argmin(feval)
     return domain[idx]
+
 
 def positions_from_trj(ctrj):
     """
@@ -290,15 +292,14 @@ def positions_from_trj(ctrj):
         Parameters:
         * ctrj
     """
-    
-    x = (ctrj['x'] + ctrj['cx']).to_numpy() 
-    y = (ctrj['y'] + ctrj['cy']).to_numpy() 
+    x = (ctrj['x'] + ctrj['cx']).to_numpy()
+    y = (ctrj['y'] + ctrj['cy']).to_numpy()
     z = (ctrj['z'] + ctrj['cz']).to_numpy()
-    
-    stuff = pd.DataFrame(data =np.column_stack((x,y,z)), columns=['x','y','z'], index=list(range(1,len(ctrj)+1)))
+
+    stuff = pd.DataFrame(data=np.column_stack((x,y,z)), columns=['x','y','z'], index=list(range(1,len(ctrj)+1)))
     stuff.rename_axis('id', inplace=True)
-    
     return stuff
+
 
 def dropvis(ctrj):
     """

@@ -24,15 +24,15 @@ from parameters import params
 ureg = ice.ureg
 idx = pd.IndexSlice
 
-SIZES = ['10'] 
-DATA_PATH = r'../data/test01/'
+SIZES = ['10']
+DATA_PATH = r'../data/test16/'
 REALIZATIONS = 10
 
 print("COMPUTING VERTICES")
-for strsize in SIZES: 
+for strsize in SIZES:
     print(f"===== size {strsize} =====")
     params['size'] = int(strsize)
-    
+
     trj_path = os.path.join(DATA_PATH,strsize,"trj")
     vrt_path = os.path.join(DATA_PATH,strsize,"vertices")
     try:
@@ -44,12 +44,11 @@ for strsize in SIZES:
 
         trj_file = os.path.join(trj_path,f"xtrj{i}.csv")
         vrt_file = os.path.join(vrt_path,f"vertices{i}.csv")
-        
-        
+
         if os.path.isfile(vrt_file):
             print(f'{vrt_file}... exists')
             continue
-        
+
         # Importing files
         print(f"working on ... {trj_file}")
         try:
