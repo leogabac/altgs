@@ -14,7 +14,7 @@ import icenumerics as ice
 import importlib
 
 
-from parameters import params
+from thermal_parameters import params
 import auxiliary as aux
 import montecarlo_colloids as mc
 
@@ -67,7 +67,7 @@ fz = module.fz
 trj = pd.read_csv(os.path.join(data_path,'trj','xtrj2.csv'),index_col=['frame','id'])
 vertices = pd.read_csv(os.path.join(data_path,'vertices','vertices2.csv'),index_col=['frame','vertex'])
 time = trj.t.unique()
-
+# trj = trj.drop(['type'],axis=1)
 v = ice.vertices()
 v.vertices = vertices
 
@@ -95,7 +95,7 @@ for frame in tqdm(frames[::5]):
                trap_color='gray',
                ax = ax)
 
-    v.display(ax,sl=frame)
+    v.display(ax,sl=frame,dpl_scale=0.5,dpl_width=2.5,circle_scale=0.5)
     ax.set_title(f'$t = {frame/20:1.2f}$')
 
     ax2  = fig.add_subplot(122,projection='3d')

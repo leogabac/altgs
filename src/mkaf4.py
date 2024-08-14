@@ -12,7 +12,7 @@ sys.path.insert(0, './testing/')
 import icenumerics as ice
 
 
-from parameters import params
+from thermal_parameters import params
 import auxiliary as aux
 import montecarlo_colloids as mc
 
@@ -48,7 +48,7 @@ def save_af4(data_path,N):
     
     col1.to_ctrj().to_csv(os.path.join(data_path,'af4',f'{N}.csv'))
 
-data_path = "../data/states/"
+data_path = "../data/small_states/"
 
 for size in tqdm(range(10,31,1)):
     save_af4(data_path,size)

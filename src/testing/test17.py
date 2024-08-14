@@ -1,7 +1,7 @@
 # ====================
-# Test 16
+# Test 15
 # Start from an ordered state
-# Fix one particle in place
+# Same as test04 but very fast
 # ====================
 
 import os
@@ -18,7 +18,7 @@ import concurrent.futures
 import auxiliary as aux
 import vertices as vrt
 
-from parameters import params
+from thermal_parameters import params
 from tqdm import tqdm
 import importlib
 import argparse
@@ -50,34 +50,10 @@ def create_simulation(params, trj, size, realization):
                     stiffness=params['trap_stiffness']
     )
 
-    fixed_trap = ice.trap(trap_sep=0*ureg.um,
-                          height=params['trap_height'],
-                          stiffness=params['trap_stiffness']
-    )
+    params['particle'] = particle
+    params['trap'] = trap
 
-    # make the structure of the colloid
-    centers = [row[['x','y','z']].to_list() * ureg.um for _,row in trj.iterrows()]
-    directions = [row[['dx','dy','dz']].to_list() * ureg.um for _,row in trj.iterrows()]
-    arrangement = {"centers": centers,
-                   "directions": directions
-                }
-
-    # select one particle to fix
-    idx = 42
-    traps = [fixed_trap if (i == idx) else trap for i in range(len(centers))]
-
-    col = ice.colloidal_ice(arrangement, particle, traps,
-                            height_spread=0,
-                            susceptibility_spread=0.1,
-                            periodic=True)
-
-    particle_radius = params['particle_radius']
-    col.region = np.array([[0,0,-3*(particle_radius/a/N).magnitude],[1,1,3*(particle_radius/a/N).magnitude]])*N*a
-
-    # move the particle a tiny bit
-    col[idx].colloid += col[idx].direction * params['lattice_constant']/8
-    col[idx].center += col[idx].direction * params['trap_sep']/2
-
+    col = aux.trj2col(params,trj)
 
     world = ice.world(
         field=params['max_field'],
@@ -112,26 +88,19 @@ def run_simulation(params,trj,size,realization):
 def load_simulation(params,trj,data_path,size,realization):
     print(f'Saving {realization}...')
     col = create_simulation(params,trj,size,realization)
-
     col.sim.base_name = os.path.join(col.sim.dir_name,col.sim.file_name)
     col.sim.script_name = col.sim.base_name+'.lmpin'
     col.sim.input_name = col.sim.base_name+'.lmpdata'
     col.sim.output_name = col.sim.base_name+'.lammpstrj'
     col.sim.log_name = col.sim.base_name+'.log'
-
     trj_path = os.path.join(data_path,'trj')
-
-    col.load_simulation()
 
     try:
         os.mkdir(trj_path)
     except:
         pass
 
-    # low memory writter does not suppor polydisperse systems
-    trj = ice.get_ice_trj(col.trj, bounds=col.bnd, trap_types=[2,3])
-    trj.to_csv(os.path.join(trj_path,f'ctrj{realization}.csv'))
-    # ice.get_ice_trj_low_memory(col,dir_name=trj_path)
+    ice.get_ice_trj_low_memory(col,dir_name=trj_path)
 
 # ===== MAIN ROUTINE ===== #
 
@@ -160,10 +129,6 @@ if not sth_passed:
 
 
 # importing the field
-
-params['total_time'] = 9 * ureg.s
-params["max_field"] = 20 * ureg.mT
-
 script_name = sys.argv[0][:-3]
 module_name = f'{script_name}_field'
 module = importlib.import_module(module_name)
@@ -173,11 +138,10 @@ fz = module.fz
 
 
 SIZE = int(args.size)
-print(f'N: {SIZE}')
 REALIZATIONS = list(range(1, 11))
 DATA_PATH = f'../../data/{script_name}/'
 SIZE_PATH = os.path.join(DATA_PATH, str(SIZE))
-GSTRJ = pd.read_csv(f'../../data/states/ice/{SIZE}.csv', index_col='id')
+GSTRJ = pd.read_csv(f'../../data/small_states/ice/{SIZE}.csv', index_col='id')
 
 if not os.path.isdir(SIZE_PATH):
     os.makedirs(SIZE_PATH)
@@ -189,17 +153,18 @@ if args.sims:
 
     print('Time: ', params['total_time'])
     print('Field:', params["max_field"])
+    print('Field:', params["particle_radius"])
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=14) as executor:
-         results = list(
-             executor.map(
-                 run_simulation,
-                 [params] * len(REALIZATIONS),
-                 [GSTRJ] * len(REALIZATIONS),
-                 [SIZE] * len(REALIZATIONS),
-                 REALIZATIONS
-             )
-         )
+        results = list(
+            executor.map(
+                run_simulation,
+                [params] * len(REALIZATIONS),
+                [GSTRJ] * len(REALIZATIONS),
+                [SIZE] * len(REALIZATIONS),
+                REALIZATIONS
+            )
+        )
 
     for i in REALIZATIONS:
         print(f'===== Realization {i} =====')
@@ -208,11 +173,12 @@ if args.sims:
 if args.vertices:
     string_part = f'{script_name}'
 
-    # os.system('clear')
-    # os.chdir('../')
-    # print('CLEANING')
-    # os.system(f'python cleaning.py {string_part}')
+    os.system('clear')
+    os.chdir('../')
+    print('CLEANING')
+    os.system(f'python cleaning.py {string_part}')
 
+    os.chdir('./testing')
     os.system('clear')
     print('VERTICES')
     if not os.path.isdir(os.path.join(SIZE_PATH,'vertices')):
@@ -220,20 +186,16 @@ if args.vertices:
 
     for r in REALIZATIONS:
         print('r: ',r)
-        trj_path = os.path.join(SIZE_PATH,'trj',f'ctrj{r}.csv')
+        trj_path = os.path.join(SIZE_PATH,'trj',f'xtrj{r}.csv')
         vrt_path = os.path.join(SIZE_PATH,'vertices',f'vertices{r}.csv')
 
         trj = pd.read_csv(trj_path,index_col=['frame','id'])
-        # fix the direction of the particles that do not have
-        # this will only happen with the isolated particle
-        b = (trj[['dx','dy','dz']].sum(axis=1) == 0).to_list()
-        trj.loc[b,'dx'] = [-1] * sum(b)
+        # b = (trj[['dx','dy','dz']].sum(axis=1) == 0).to_list()
+        # trj.loc[b,'dx'] = [-1] * sum(b)
 
         v = ice.vertices()
         v = v.trj_to_vertices(trj)
         v.vertices.to_csv(vrt_path)
-    # os.system(f'python compute_vertices.py {string_part}')
-    # os.system(f'python bulk_vertices.py')
 
 if args.averages:
     t, vrt_counts = aux.do_vertices(params, SIZE_PATH)
