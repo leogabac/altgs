@@ -64,8 +64,8 @@ fy = module.fy
 fz = module.fz
 
 # importing data
-trj = pd.read_csv(os.path.join(data_path,'trj','xtrj2.csv'),index_col=['frame','id'])
-vertices = pd.read_csv(os.path.join(data_path,'vertices','vertices2.csv'),index_col=['frame','vertex'])
+trj = pd.read_csv(os.path.join(data_path,'trj','xtrj1.csv'),index_col=['frame','id'])
+vertices = pd.read_csv(os.path.join(data_path,'vertices','vertices1.csv'),index_col=['frame','vertex'])
 time = trj.t.unique()
 # trj = trj.drop(['type'],axis=1)
 v = ice.vertices()
